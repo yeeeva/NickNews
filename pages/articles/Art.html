@@ -1,5 +1,5 @@
 <html>
-
+    <title>NICKNEWS</title>
 <head>
     <!--告訴瀏覽器要根據載具的大小來呈現網頁-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,6 +81,59 @@
             color: #9C9C9C
         }
 
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
+        .us {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            line-height: 35px;
+            /* identical to box height, or 219% */
+            color: #FFFFFF;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            font-weight: normal;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+
         /* viewport width >1023px 是電腦版的話*/
         @media(min-width: 1023px) {
 
@@ -104,9 +157,9 @@
                 line-height: 19px;
                 margin-left: 200px;
                 margin-top: 25px;
-               
+
                 color: #9C9C9C;
-               
+
 
 
             }
@@ -131,6 +184,25 @@
                 padding-top: 109px;
                 color: #656565;
             }
+
+            .footer {
+                width: 100%;
+                height: 700px;
+            }
+
+            .us {
+                font-size: 22px;
+            }
+
+            .copyright {
+                font-size: 18px;
+            }
+
+            .photo {
+                width: 200px;
+                height: 200px;
+
+            }
         }
     </style>
 
@@ -138,6 +210,10 @@
 
 <body>
     <div class="iphone8 mobile-only">
+        <!-- header -->
+        <div>
+            <img src="./images/icons_header_footer/logo.png" class="header">
+        </div>
         <div style="width:calc(326/375*100%);" class="center">
             <div class="topic">影音新聞</div>
             <div class="title">藝術工作不穩定<br>學生接案困難重重
@@ -157,25 +233,113 @@
 
             </div>
         </div>
-   
+        <div class="footer">
+            <div class="us" style="padding-top: 15px;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/tingli.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    劉庭莉</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    白　欣</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    黃宥綺</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    黃易凡</a></div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
+
     </div>
     <div class="w-1024 desktop-only">
+        <!-- header -->
+        <div>
+            <img src="./images/icons_header_footer/logo.png" class="header">
+        </div>
         <div class="topic">影音新聞</div>
         <div class="title">藝術工作不穩定 學生接案困難重重</div>
         <div class="name">黃易凡、劉苑衫、許晏誠 </div>
-    <!--  viedo image -->
-    <div style="margin-bottom: 20px;">
-        <div class="youtube-embed">
-            <iframe style="position: absolute;" width="100%" height="100%"
-                src="https://www.youtube.com/embed/B0OHXC94lYI" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe></div>
-        <div class="article center">
-            在國立政治大學，有一名學生把腦海中的創意繪製成大型壁畫，偶爾也會在外頭接案創作的她，講述了年輕藝術工作者所遭遇的困難。我們常聽到畫畫不能當飯吃，但你真的對創作產業有正確的認知嗎？
+        <!--  viedo image -->
+        <div style="margin-bottom: 20px;">
+            <div class="youtube-embed">
+                <iframe style="position: absolute;" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/B0OHXC94lYI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="article center">
+                在國立政治大學，有一名學生把腦海中的創意繪製成大型壁畫，偶爾也會在外頭接案創作的她，講述了年輕藝術工作者所遭遇的困難。我們常聽到畫畫不能當飯吃，但你真的對創作產業有正確的認知嗎？
 
 
+            </div>
         </div>
-    </div>
+        <div class="footer desktop-only">
+            <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/tingli.jpg" class="photo center">
+                    </a>
+                </div>
+                <div class="us" style="margin: 0px 110px 0px 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        劉庭莉</a></div>
+
+
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+                </div>
+                <div class="us" style="margin-left: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        白　欣</a></div>
+            </div>
+
+            <div style="display: flex; align-items: center;justify-content: center;">
+                <div class="us" style="margin-right: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        黃宥綺</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+                </div>
+
+                <div class="us" style="margin: 0px 30px 0px 110px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        黃易凡</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+                </div>
+            </div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
     </div>
 
 
