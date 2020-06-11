@@ -1,0 +1,303 @@
+<html>
+
+<head>
+    <!--告訴瀏覽器要根據載具的大小來呈現網頁-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .iphone8 {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .w-1024 {
+            width: 1024px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        body {
+            background-color: #F1F1F1;
+        }
+
+        .header {
+            height: 60px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .topic {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            color: #BB6845;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 50px;
+            /* or 147% */
+            color: #656565;
+        }
+
+        .date {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 19px;
+            /* identical to box height, or 158% */
+            color: #9C9C9C;
+            margin-bottom: 19px;
+        }
+
+        .hero {
+            width: 100%;
+        }
+
+        .hero_p {
+            width: calc(300/375*100%);
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #656565;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
+        .us {
+            font-weight: 400;
+            text-align: center;
+            font-size: 16px;
+            line-height: 35px;
+            /* identical to box height, or 219% */
+            color: #FFFFFF;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            font-weight: normal;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
+
+        /* viewport width >1023px */
+        @media(min-width: 1023px) {
+
+            .header {
+                height: 80px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 55px;
+                padding-bottom: 55px;
+            }
+
+            .topic {
+                font-size: 22px;
+                line-height: 33px;
+            }
+
+            .title {
+                font-size: 42px;
+                line-height: 63px;
+            }
+
+            .date {
+                font-size: 18px;
+                line-height: 19px;
+                margin-bottom: 45px;
+            }
+
+            .hero {
+                width: 900px;
+            }
+
+            .hero_p {
+                width: 900px;
+                margin-top: 35px;
+                margin-bottom: 60px;
+            }
+
+            .footer {
+                width: 100%;
+                height: 700px;
+            }
+
+            .us {
+                font-size: 22px;
+            }
+
+            .copyright {
+                font-size: 18px;
+            }
+
+            .photo {
+                width: 200px;
+                height: 200px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iphone8 mobile-only">
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="us" style="padding-top: 15px;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100001918392948" target="_blank">
+                    <img src="./images/tingli.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://www.facebook.com/profile.php?id=100001918392948" target="_blank">
+                    劉庭莉</a></div>
+
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100002474736299" target="_blank">
+                    <img src="./images/stacy.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://www.facebook.com/profile.php?id=100002474736299" target="_blank">
+                    白　欣</a></div>
+
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100002133302912" target="_blank">
+                    <img src="./images/you.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://www.facebook.com/profile.php?id=100002133302912" target="_blank">
+                    黃宥綺</a></div>
+
+            <div>
+                <a href="https://www.facebook.com/evahuang.cat" target="_blank">
+                    <img src="./images/eva.png" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://www.facebook.com/evahuang.cat" target="_blank">
+                    黃易凡</a></div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
+
+    </div>
+
+    <div class="w-1024 desktop-only">
+
+    </div>
+    <div class="footer desktop-only">
+        <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
+        <div class="copyright">一群法賢的愛徒</div>
+
+        <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100001918392948" target="_blank">
+                    <img src="./images/tingli.jpg" class="photo center">
+                </a>
+            </div>
+            <div class="us" style="margin: 0px 110px 0px 30px;">
+                <a href="https://www.facebook.com/profile.php?id=100001918392948" target="_blank">
+                    劉庭莉</a></div>
+
+
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100002474736299" target="_blank">
+                    <img src="./images/stacy.jpg" class="photo center"></a>
+            </div>
+            <div class="us" style="margin-left: 30px;">
+                <a href="https://www.facebook.com/profile.php?id=100002474736299" target="_blank">
+                    白　欣</a></div>
+        </div>
+
+        <div style="display: flex; align-items: center;justify-content: center;">
+            <div class="us" style="margin-right: 30px;">
+                <a href="https://www.facebook.com/profile.php?id=100002133302912" target="_blank">
+                    黃宥綺</a></div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100002133302912" target="_blank">
+                    <img src="./images/you.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us" style="margin: 0px 30px 0px 110px;">
+                <a href="https://www.facebook.com/evahuang.cat" target="_blank">
+                    黃易凡</a></div>
+            <div>
+                <a href="https://www.facebook.com/evahuang.cat" target="_blank">
+                    <img src="./images/eva.png" class="photo center"></a>
+            </div>
+        </div>
+        <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+    </div>
+
+
+</body>
+
+</html>
