@@ -1,5 +1,6 @@
 <html>
-    <title>NICKNEWS</title>
+<title>NICKNEWS</title>
+
 <head>
     <!--告訴瀏覽器要根據載具的大小來呈現網頁-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -131,12 +132,29 @@
             font-size: 12px;
             line-height: 30px;
             color: #FFFFFF;
+
+        }
+
+        .header {
+            height: 60px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
 
         /* viewport width >1023px 是電腦版的話*/
         @media(min-width: 1023px) {
-
+            .header {
+                height: 80px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 55px;
+                padding-bottom: 55px;
+            }
 
             .topic {
                 font-size: 22px;
