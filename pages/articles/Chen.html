@@ -1,4 +1,5 @@
 <html>
+<title>NICKNEWS</title>
 
 <head>
     <!--告訴瀏覽器要根據載具的大小來呈現網頁-->
@@ -89,6 +90,58 @@
             color: #9C9C9C
         }
 
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
+        .us {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            line-height: 35px;
+            /* identical to box height, or 219% */
+            color: #FFFFFF;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+
+        .copyright {
+            font-weight: normal;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
         /* viewport width >1023px 是電腦版的話*/
         @media(min-width: 1023px) {
             .header {
@@ -99,7 +152,6 @@
                 padding-top: 55px;
                 padding-bottom: 55px;
             }
-
             .topic {
                 font-size: 22px;
                 line-height: 33px;
@@ -141,6 +193,25 @@
                 padding-top: 109px;
                 color: #656565;
             }
+
+            .footer {
+                width: 100%;
+                height: 700px;
+            }
+
+            .us {
+                font-size: 22px;
+            }
+
+            .copyright {
+                font-size: 18px;
+            }
+
+            .photo {
+                width: 200px;
+                height: 200px;
+
+            }
         }
     </style>
 
@@ -148,6 +219,9 @@
 
 <body>
     <div class="iphone8 mobile-only">
+        <div>
+            <img src="./images/icons_header_footer/logo.png" class="header">
+        </div>
         <div style="width:calc(326/375*100%);" class="center">
             <h2 class="topic">影音新聞</h2>
             <h1 class="title">點亮百年老厝的勇者藝術家
@@ -166,8 +240,52 @@
                 大學主修大氣科學的陳杰蔚，為了轉換人生跑道，離開求學和工作十多年的台北，回到自己的家鄉 - 蘆竹湳，一座歷史悠久的的閩南聚落。陳杰蔚在返鄉之後，成立工作室Start
                 works「始作自造所」，以科技替老厝注入新的活力。 </div>
         </div>
+        <div class="footer">
+            <div class="us" style="padding-top: 15px;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/tingli.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    劉庭莉</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    白　欣</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    黃宥綺</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    黃易凡</a></div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
     </div>
     <div class="w-1024 desktop-only">
+        <div>
+            <img src="./images/icons_header_footer/logo.png" class="header">
+        </div>
         <div class="topic">影音新聞</div>
         <div class="title">點亮百年老厝的勇者藝術家
             －陳杰蔚</div>
@@ -182,17 +300,53 @@
             <div class="article center">
                 大學主修大氣科學的陳杰蔚，為了轉換人生跑道，離開求學和工作十多年的台北，回到自己的家鄉 - 蘆竹湳，一座歷史悠久的的閩南聚落。陳杰蔚在返鄉之後，成立工作室Start
                 works「始作自造所」，以科技替老厝注入新的活力。
-
-
             </div>
-
-
-
-
-
-
-
         </div>
+        <div class="footer desktop-only">
+            <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+    
+            <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/tingli.jpg" class="photo center">
+                    </a>
+                </div>
+                <div class="us" style="margin: 0px 110px 0px 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        劉庭莉</a></div>
+    
+    
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+                </div>
+                <div class="us" style="margin-left: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        白　欣</a></div>
+            </div>
+    
+            <div style="display: flex; align-items: center;justify-content: center;">
+                <div class="us" style="margin-right: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        黃宥綺</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+                </div>
+    
+                <div class="us" style="margin: 0px 30px 0px 110px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        黃易凡</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+                </div>
+            </div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
+    
+    
 
 
 </body>
