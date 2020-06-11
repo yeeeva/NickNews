@@ -1,4 +1,5 @@
 <html>
+<title>NICKNEWS</title>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,10 @@
                 /* don't display at mobile */
                 display: none;
             }
+
+            .header {
+                max-height: 150px;
+            }
         }
 
         .w-300 {
@@ -29,9 +34,8 @@
             width: 1024px;
         }
 
-        .background {
+        body {
             background-color: #F1F1F1;
-            width: 1024px;
         }
 
         .title {
@@ -73,7 +77,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 35px;
             text-decoration-line: none;
             border-bottom: 1px;
@@ -89,7 +93,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 38px;
             color: #9C9C9C;
             text-align: center;
@@ -111,7 +115,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #FFFFFF;
             margin-top: 35px;
@@ -128,7 +132,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #9C9C9C;
             text-align: center;
@@ -153,14 +157,14 @@
 
         .moblie-img {
             width: 90%;
-            margin: 20px;
+            margin: 15px;
         }
 
         .moblie-imgcap {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 25px;
             color: #9C9C9C;
             margin-top: 10px;
@@ -173,10 +177,77 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #9C9C9C;
             padding: 15px 55px 15px 55px;
+        }
+
+        .header {
+            width: 100%;
+            max-height: 190px;
+            left: 0;
+            top: 0;
+            padding: 55px;
+            text-align: center;
+            background-color: #F1F1F1;
+        }
+
+        .us {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            line-height: 35px;
+            /* identical to box height, or 219% */
+            color: #FFFFFF;
+        }
+
+        .copyright {
+            font-weight: normal;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
         }
     </style>
 
@@ -184,7 +255,13 @@
     <!--桌機版-->
     <div class="desktop-only w-1024 block-horizontal-center">
 
-        <!--上面要放header的code-->
+        <!--放header的code-->
+        <a style="background-color:#F1F1F1" href="../../index.html">
+            <div class="header">
+                <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+            </div>
+        </a>
 
         <!-- subtitle -->
         <h2 class="sub-title">校園</h2>
@@ -230,7 +307,8 @@
         </div>
 
         <div class="p block-horizontal-center">
-            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
+            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a
+                href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
         </div>
 
         <div class="p block-horizontal-center">
@@ -240,12 +318,74 @@
         <div class="p block-horizontal-center">
             此次學生會因未提供自治會法規中的《學生自治會學生預算法》（以下簡稱預算法）明定之期入期出概算、行政計畫企畫書、學生會資產清冊等資料被凍結。目前學生會雖已完成補件，但因內容過於簡略，再度引發學生討論。對於學生會的補件資料，吳敬家說：「學生會補交預算表卻內容簡陋，給人一種敷衍的感覺。」而彭宬也表示，會就此情況，在30日的審查會議向學生會提出改善要求。同時，也開放匿名表單，供學生填寫對於學生會的建議，屆時議會將一併要求學生會回覆。
         </div>
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#世新大學校園</p>
+            <p>#世新學生會</p>
+            <p>#世新學生議會</p>
+            <p>#總預算案</p>
+            <p>#財務資訊公開</p>
+        </div>
+        <div class="footer desktop-only">
+            <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/tingli.jpg"
+                            class="photo center">
+                    </a>
+                </div>
+                <div class="us" style="margin: 0px 110px 0px 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        劉庭莉</a></div>
+
+
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/stacy.jpg"
+                            class="photo center"></a>
+                </div>
+                <div class="us" style="margin-left: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        白　欣</a></div>
+            </div>
+
+            <div style="display: flex; align-items: center;justify-content: center;">
+                <div class="us" style="margin-right: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        黃宥綺</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/you.jpg"
+                            class="photo center"></a>
+                </div>
+
+                <div class="us" style="margin: 0px 30px 0px 110px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        黃易凡</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/eva.jpg"
+                            class="photo center"></a>
+                </div>
+            </div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
+    </div>
 
 
     <!--手機版-->
 
     <div class="mobile-only w-300 block-horizontal-center">
-        <!--上面要放header的code-->
+        <!--放header的code-->
+        <a style="background-color:#F1F1F1" href="../../index.html">
+            <div class="header">
+                <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+            </div>
+        </a>
 
         <!-- subtitle -->
         <h2 class="sub-title">校園</h2>
@@ -272,12 +412,10 @@
             【記者白欣綜合報導】21日，世新大學學生在社群網站匿名發文，質疑世新學生自治會（以下簡稱學生會）在遞交給世新學生議會（以下簡稱議會）審查的活動預算案中，頁末標明「未經由學生會同意，請勿傳載此檔案」之舉，與5月競選提出的「定時公布學生會財務明細表與會議紀錄」政見相牴觸。該生指出，學生會並未履行選前承諾，且預算案資料過於簡略，甚至總金額加總也有誤，引發校內熱議。
         </div>
 
-                <img class="moblie-img" src="./pic/sh1.png">
-                <div class="moblie-imgcap">
-                    現任世新大學學生自治會會長、副會長，在選舉時，提出的政見主軸四，包含定時公布學生會財務明細與會議紀錄。　圖／取自簡廷家×李昕芸粉絲專頁
+        <img class="moblie-img" src="./pic/sh1.png">
+        <div class="moblie-imgcap">
+            現任世新大學學生自治會會長、副會長，在選舉時，提出的政見主軸四，包含定時公布學生會財務明細與會議紀錄。　圖／取自簡廷家×李昕芸粉絲專頁
 
-                </div>
-            </div>
         </div>
 
         <div class="p block-horizontal-center">
@@ -289,7 +427,8 @@
         </div>
 
         <div class="p block-horizontal-center">
-            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
+            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a
+                href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
         </div>
 
         <div class="p block-horizontal-center">
@@ -308,4 +447,53 @@
             <p>#總預算案</p>
             <p>#財務資訊公開</p>
         </div>
-    </div>
+        <div class="footer">
+            <div class="us" style="padding-top: 15px;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/tingli.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    劉庭莉</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/stacy.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    白　欣</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/you.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    黃宥綺</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/eva.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    黃易凡</a></div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
+
+</body>
+</head>
+
+</html>

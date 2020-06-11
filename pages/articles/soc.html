@@ -1,4 +1,5 @@
 <html>
+<title>NICKNEWS</title>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,10 @@
                 /* don't display at mobile */
                 display: none;
             }
+
+            .header {
+                max-height: 150px;
+            }
         }
 
         .w-300 {
@@ -29,9 +34,8 @@
             width: 1024px;
         }
 
-        .background {
+        body {
             background-color: #F1F1F1;
-            width: 1024px;
         }
 
         .title {
@@ -73,7 +77,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 35px;
             text-decoration-line: none;
             border-bottom: 1px;
@@ -89,7 +93,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 38px;
             color: #9C9C9C;
             text-align: center;
@@ -111,7 +115,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #FFFFFF;
             margin-top: 35px;
@@ -128,7 +132,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #9C9C9C;
             text-align: center;
@@ -153,14 +157,14 @@
 
         .moblie-img {
             width: 90%;
-            margin: 20px;
+            margin: 15px;
         }
 
         .moblie-imgcap {
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 25px;
             color: #9C9C9C;
             margin-top: 10px;
@@ -173,7 +177,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 35px;
             color: #9C9C9C;
             padding: 15px 55px 15px 55px;
@@ -193,13 +197,86 @@
         .chart {
             width: 70%
         }
+
+        .header {
+            width: 100%;
+            max-height: 190px;
+            left: 0;
+            top: 0;
+            padding: 55px;
+            text-align: center;
+            background-color: #F1F1F1;
+        }
+
+        .us {
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            line-height: 35px;
+            /* identical to box height, or 219% */
+            color: #FFFFFF;
+        }
+
+        .copyright {
+            font-weight: normal;
+            text-align: center;
+            font-size: 12px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
     </style>
 
 <body>
     <!--桌機版-->
     <div class="desktop-only w-1024 block-horizontal-center">
 
-        <!--上面要放header的code-->
+        <!--放header的code-->
+        <a style="background-color:#F1F1F1" href="../../index.html">
+            <div class="header">
+                <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+            </div>
+        </a>
 
         <!-- subtitle -->
         <h2 class="sub-title">專題</h2>
@@ -264,16 +341,8 @@
             此外，考過證照、欲以「社工師」名義就業前，還得先經過一段繁雜流程及付出大筆費用。社工師K（化名）說明，首先要報考「專門職業及技術人員高等考試社會工作師考試」，若通過考試，除要繳費取得合格證書與證照，還需加入地方社會工作師公會，方可向地方政府申請執照，擁有執照後才能以社工師身分工作。
         </div>
 
-        <div class="img-bg" style="display: flex; justify-content: center;">
-            <img class="chart" src="./pic/soc4.jpg">
-        </div>
-
         <div class="p block-horizontal-center">
             然雖證照並無期限，但執照需要六年更換一次。因此社工師在申請完執業執照後，應持續學習以獲得教育積分，累積到一定學分才可順利換照。如未在六年內繼續修滿教育積分，將被認為不符合繼續執業的資格。
-        </div>
-
-        <div class="img-bg" style="display: flex; justify-content: center;">
-            <img class="chart" src="./pic/soc5.jpg">
         </div>
 
         <div class="p block-horizontal-center">
@@ -313,32 +382,80 @@
             除此之外，社福界存在著薪水回捐的陋習，在社工每月的薪水裡扣一部分，捐給發薪單位。沈曜逸指出，職業工會最常處理的就是勞資爭議。然勞資雙方間資訊落差，經常令勞方起疑金錢的流向。過往曾出現個案數量超出社會局負荷，轉向委託民間機構辦理，並給予資金補助。但機構卻高報社工薪水，與社工實拿薪資並不相符，甚至任意解雇社工，造成勞權受損的狀況。沈曜逸嘆道：「社工師證照與《社會工作師法》推行20年，社工一樣還是回捐、薪資還是很低。」
         </div>
 
-        <div class="img-bg" style="display: flex; justify-content: center;">
-            <img class="chart" src="./pic/soc7.jpeg">
+        <div class="p block-horizontal-center">
+            「我們就是在hold著一群快掉下去的人，或是已經掉下去的，要趕快把他撈起來。」談到工作專業時，K點出目前社工人力不足、針對每個個案耗時長短不一的問題。即使相關權益保障尚未完善，且面臨專業不被社會大眾認知的現實，社工依然努力處理好每個個案。無論證照制度存在與否，更需要社會大眾認同「社工是一項專業」，不能輕易被志工所取代，如此才能讓社工人力匱乏、資源不足等困境獲得重視並解決。
         </div>
-    </div>
 
-    <div class="p block-horizontal-center">
-        「我們就是在hold著一群快掉下去的人，或是已經掉下去的，要趕快把他撈起來。」談到工作專業時，K點出目前社工人力不足、針對每個個案耗時長短不一的問題。即使相關權益保障尚未完善，且面臨專業不被社會大眾認知的現實，社工依然努力處理好每個個案。無論證照制度存在與否，更需要社會大眾認同「社工是一項專業」，不能輕易被志工所取代，如此才能讓社工人力匱乏、資源不足等困境獲得重視並解決。
-    </div>
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#執照</p>
+            <p>#宋麗玉</p>
+            <p>#沈曜逸</p>
+            <p>#社工</p>
+            <p>#證照</p>
+            <p>#郭志南</p>
+        </div>
 
-    <div class="tag">
-        <p>#大學報</p>
-        <p>#執照</p>
-        <p>#宋麗玉</p>
-        <p>#沈曜逸</p>
-        <p>#社工</p>
-        <p>#社會工作師法</p>
-        <p>#證照</p>
-        <p>#郭志南</p>
-    </div>
+        <div class="footer desktop-only">
+            <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/tingli.jpg"
+                            class="photo center">
+                    </a>
+                </div>
+                <div class="us" style="margin: 0px 110px 0px 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                        劉庭莉</a></div>
+
+
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/stacy.jpg"
+                            class="photo center"></a>
+                </div>
+                <div class="us" style="margin-left: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                        白　欣</a></div>
+            </div>
+
+            <div style="display: flex; align-items: center;justify-content: center;">
+                <div class="us" style="margin-right: 30px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        黃宥綺</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/you.jpg"
+                            class="photo center"></a>
+                </div>
+
+                <div class="us" style="margin: 0px 30px 0px 110px;">
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        黃易凡</a></div>
+                <div>
+                    <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                        <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/eva.jpg"
+                            class="photo center"></a>
+                </div>
+            </div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
+        </div>
     </div>
 
 
     <!--手機版-->
 
     <div class="mobile-only w-300 block-horizontal-center">
-        <!--上面要放header的code-->
+        <!--放header的code-->
+        <a style="background-color:#F1F1F1" href="../../index.html">
+            <div class="header">
+                <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+            </div>
+        </a>
 
         <!-- subtitle -->
         <h2 class="sub-title">專題</h2>
@@ -399,16 +516,8 @@
             此外，考過證照、欲以「社工師」名義就業前，還得先經過一段繁雜流程及付出大筆費用。社工師K（化名）說明，首先要報考「專門職業及技術人員高等考試社會工作師考試」，若通過考試，除要繳費取得合格證書與證照，還需加入地方社會工作師公會，方可向地方政府申請執照，擁有執照後才能以社工師身分工作。
         </div>
 
-        <div class="moblie-img">
-            <img src="./pic/soc4.jpg">
-        </div>
-
         <div class="p block-horizontal-center">
             然雖證照並無期限，但執照需要六年更換一次。因此社工師在申請完執業執照後，應持續學習以獲得教育積分，累積到一定學分才可順利換照。如未在六年內繼續修滿教育積分，將被認為不符合繼續執業的資格。
-        </div>
-
-        <div class="moblie-img">
-            <img src="./pic/soc5.jpg">
         </div>
 
         <div class="p block-horizontal-center">
@@ -444,10 +553,6 @@
             除此之外，社福界存在著薪水回捐的陋習，在社工每月的薪水裡扣一部分，捐給發薪單位。沈曜逸指出，職業工會最常處理的就是勞資爭議。然勞資雙方間資訊落差，經常令勞方起疑金錢的流向。過往曾出現個案數量超出社會局負荷，轉向委託民間機構辦理，並給予資金補助。但機構卻高報社工薪水，與社工實拿薪資並不相符，甚至任意解雇社工，造成勞權受損的狀況。沈曜逸嘆道：「社工師證照與《社會工作師法》推行20年，社工一樣還是回捐、薪資還是很低。」
         </div>
 
-        <div class="moblie-img">
-            <img src="./pic/soc7.jpeg">
-        </div>
-
         <div class="p block-horizontal-center">
             「我們就是在hold著一群快掉下去的人，或是已經掉下去的，要趕快把他撈起來。」談到工作專業時，K點出目前社工人力不足、針對每個個案耗時長短不一的問題。即使相關權益保障尚未完善，且面臨專業不被社會大眾認知的現實，社工依然努力處理好每個個案。無論證照制度存在與否，更需要社會大眾認同「社工是一項專業」，不能輕易被志工所取代，如此才能讓社工人力匱乏、資源不足等困境獲得重視並解決。
         </div>
@@ -458,9 +563,53 @@
             <p>#宋麗玉</p>
             <p>#沈曜逸</p>
             <p>#社工</p>
-            <p>#社會工作師法</p>
             <p>#證照</p>
             <p>#郭志南</p>
+        </div>
+        <div class="footer">
+            <div class="us" style="padding-top: 15px;">關於我們</div>
+            <div class="copyright">一群法賢的愛徒</div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/tingli.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
+                    劉庭莉</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/stacy.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
+                    白　欣</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/you.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
+                    黃宥綺</a></div>
+
+            <div>
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    <img src="https://yeeeva.github.io/NickNews/images/icons_header_footer/eva.jpg"
+                        class="photo center"></a>
+            </div>
+
+            <div class="us">
+                <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
+                    黃易凡</a></div>
+            <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
         </div>
     </div>
 </body>
