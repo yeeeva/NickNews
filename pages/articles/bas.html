@@ -12,6 +12,9 @@
                 /* don't display at desktop */
                 display: none;
             }
+            .header {
+                max-height: 150px;
+            }
         }
 
         @media all and (max-width: 1024px) {
@@ -29,9 +32,8 @@
             width: 1024px;
         }
 
-        .background {
+        body {
             background-color: #F1F1F1;
-            width: 1024px;
         }
 
         .title {
@@ -193,13 +195,29 @@
         .chart {
             width: 70%
         }
+
+        .header {
+            width: 100%;
+            max-height: 190px;
+            left: 0;
+            top: 0;
+            padding: 55px;
+            text-align: center;
+            background-color: #F1F1F1;
+        }
     </style>
 
 <body>
     <!--桌機版-->
     <div class="desktop-only w-1024 block-horizontal-center">
 
-        <!--上面要放header的code-->
+    <!--放header的code-->
+    <a style="background-color:#F1F1F1" href="../../index.html">
+        <div class="header">
+            <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+        </div>
+    </a>
 
         <!-- subtitle -->
         <h2 class="sub-title">專題</h2>
@@ -427,8 +445,13 @@
     <!--手機版-->
 
     <div class="mobile-only w-300 block-horizontal-center">
-        <!--上面要放header的code-->
-
+    <!--放header的code-->
+    <a style="background-color:#F1F1F1" href="../../index.html">
+        <div class="header">
+            <img src="../../images/icons_header_footer/logo.png" style="max-width: 100%; max-height: 80px"
+                    alt="logo">
+        </div>
+    </a>
         <!-- subtitle -->
         <h2 class="sub-title">專題</h2>
 
