@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .w-300 {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 1024px;
+        }
+
+        .background {
+            background-color: #F1F1F1;
+            width: 1024px;
+        }
+
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #656565;
+            border: 3px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .sub-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #BB6845;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .date {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #9C9C9C;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 10px;
+        }
+
+        .p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            text-decoration-line: none;
+            border-bottom: 1px;
+            color: #656565;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .heroimg {
+            width: 100%;
+        }
+
+        .heroimg-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #9C9C9C;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: initial;
+            height: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+        }
+
+        .img {
+            width: 58%;
+        }
+
+        .img-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 35px;
+            width: 38%;
+            padding-left: 30px;
+        }
+
+        .img-bg {
+            padding: 24px 24px 24px 24px;
+            background-color: #9C9C9C;
+        }
+
+        .note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            text-align: center;
+        }
+
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .tag {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 38px;
+            color: #BB6845;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .moblie-img {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .moblie-imgcap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #9C9C9C;
+            margin-top: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .moblie-note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            padding: 15px 55px 15px 55px;
+        }
+    </style>
+
+<body>
+    <!--桌機版-->
+    <div class="desktop-only w-1024 block-horizontal-center">
+
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">體育</h2>
+
+        <!-- title -->
+        <h1 class="title">「划」敵為友　林家兄弟輕艇齊心奪魁</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/08</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/can1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    「划」敵為友　林家兄弟輕艇齊心奪魁
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者黃宥綺綜合報導】2020
+            年亞洲輕艇競速錦標賽暨奧運資格賽國家代表隊選拔賽於2日在新北市微風運河舉行，愛斯基摩艇（註1）1000公尺雙人組兄弟檔，台北市立大學的林雍博與哥哥林雍傑在四組參賽選手中脫穎而出，拿下冠軍並順利取得亞錦賽國家隊代表權。加拿大式艇（註2）1000公尺單人、雙人組則由佛光大學賴冠傑搶下代表權，選手們將積極備戰明年在泰國舉行的亞錦賽，以拿下夏季奧林匹克運動會資格賽門票為下一目標。
+        </div>
+
+        <div class="note">
+            註1：愛斯基摩艇，又稱K艇，比賽時採用坐姿，以雙槳葉的槳划船。
+        </div>
+
+        <div class="note">
+            註2：加拿大式艇，又稱C艇，比賽時採用跪姿，以單槳葉的槳划船。
+        </div>
+
+        <div class="p block-horizontal-center">
+            繼今年奧地利世界輕艇競速錦標賽，林雍博與哥哥林雍傑再次搭檔。兩人從中華民國108年全國運動會競速輕艇項目互為競爭對手，到本次選拔賽化敵為友，以13秒之差拿下代表隊資格。「從世錦賽回台灣後，有增加個人的能力，今天的表現還不錯。」林雍博表示，賽前有先擬好戰術，並與哥哥討論當日風況，以擬定比賽策略。開賽雖受側風影響，導致前段速度沒有掌握好，但後段力量有明顯提升，得以拉開距離。至於該如何備戰亞錦賽，林雍博則提及將加強基礎體能及提升力量。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/can2.jpg">
+                <div class="img-cap">
+                    輕艇競速選手林雍博、林雍傑，合力以13秒之差擊敗對手，奪下2020年亞洲輕艇競速錦標賽參賽資格。　圖／黃宥綺攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            本屆輕艇競速項目分為個人艇及雙人艇。林雍傑表示，雙人艇與搭檔間的溝通相對重要，還須同時注意划槳節奏、重心是否相同，並非由單人表現出色的兩位選手參賽，就可創下佳績，在默契培養上特別重要。他分享兩兄弟在訓練上常有摩擦，林雍傑說：「看弟弟跟看外人的標準不同，對他要求比較高，但近期有慢慢修正對他的看法。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            「持續進步，永遠不要滿足現在的成績，要不斷地突破自己。」自北市大畢業、現為國中特教老師的林雍傑仍在輕艇賽場上努力，他認為有家人、隊友的支持，遇到困難及挑戰更堅持下去，未來仍會兼顧工作及選手身分，但若過於忙碌，有可能慢慢退出。懷抱輕艇夢的兄弟檔也大方分享國外的參賽經驗，林雍傑提到國外的制度是台灣需要學習的地方。「要成為頂尖的運動員，必須對專長項目有非常大的熱愛，即使划到快厭倦時，也要告訴自己可以撐過去。」弟弟林雍博表示雖訓練上很辛苦，但他仍會堅持下去。他也談到國外參賽的落敗經驗，使他更有動力、想要加倍努力地追上其他選手，更期許自己未來在國際賽事有好表現。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/can3.jpg">
+                <div class="img-cap">
+                    輕艇競速選手、台北市立大學林雍博，賽前奮力練習，盼與哥哥林雍傑再創佳績。　圖／黃宥綺攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            而在加拿大式艇1000公尺賽事中，賴冠傑開賽時一馬當先，拉開與對手的距離，最終取得單人、雙人艇參賽資格。對於表現，他表示現在並非比賽密集時期，因此並未調整到最佳狀態，但這次的成績還算可以。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/can4.jpg">
+                <div class="img-cap">
+                    佛光大學賴冠傑在輕艇競速項目加拿大艇單人組中，擊敗對手，順利取得2020年亞洲輕艇競速錦標賽參賽資格。　圖／黃宥綺攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            「國外選手很努力，我們必須更努力。」經歷國際賽洗禮、也多次到國外訓練的賴冠傑提到，國外的環境跟資源都特別好。且國外選手有先天身材的優勢，本土選手必須更努力靠後天補足。而對於未來規劃，賴冠傑盼先拿到奧運資格，目標搶下2022年亞洲運動會輕艇競速前三名，若順利達成目標，將繼續朝奧運邁進。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/can5.jpg">
+                <div class="img-cap">
+                    佛光大學賴冠傑與搭檔沈博鴻在1000公尺雙人艇中，順利拔得頭籌，兩人開心慶賀。　圖／黃宥綺攝
+                </div>
+            </div>
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#亞洲輕艇競速錦標賽</p>
+            <p>#兄弟檔</p>
+            <p>#林雍傑</p>
+            <p>#林雍博</p>
+            <p>#賴冠傑</p>
+        </div>
+    </div>
+
+
+    <!--手機版-->
+
+    <div class="mobile-only w-300 block-horizontal-center">
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">體育</h2>
+
+        <!-- title -->
+        <h1 class="title">「划」敵為友　林家兄弟輕艇齊心奪魁</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/08</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/can1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    「划」敵為友　林家兄弟輕艇齊心奪魁
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者黃宥綺綜合報導】2020
+            年亞洲輕艇競速錦標賽暨奧運資格賽國家代表隊選拔賽於2日在新北市微風運河舉行，愛斯基摩艇（註1）1000公尺雙人組兄弟檔，台北市立大學的林雍博與哥哥林雍傑在四組參賽選手中脫穎而出，拿下冠軍並順利取得亞錦賽國家隊代表權。加拿大式艇（註2）1000公尺單人、雙人組則由佛光大學賴冠傑搶下代表權，選手們將積極備戰明年在泰國舉行的亞錦賽，以拿下夏季奧林匹克運動會資格賽門票為下一目標。
+        </div>
+
+        <div class="moblie-note">
+            註1：愛斯基摩艇，又稱K艇，比賽時採用坐姿，以雙槳葉的槳划船。
+        </div>
+
+        <div class="moblie-note">
+            註2：加拿大式艇，又稱C艇，比賽時採用跪姿，以單槳葉的槳划船。
+        </div>
+
+        <div class="p block-horizontal-center">
+            繼今年奧地利世界輕艇競速錦標賽，林雍博與哥哥林雍傑再次搭檔。兩人從中華民國108年全國運動會競速輕艇項目互為競爭對手，到本次選拔賽化敵為友，以13秒之差拿下代表隊資格。「從世錦賽回台灣後，有增加個人的能力，今天的表現還不錯。」林雍博表示，賽前有先擬好戰術，並與哥哥討論當日風況，以擬定比賽策略。開賽雖受側風影響，導致前段速度沒有掌握好，但後段力量有明顯提升，得以拉開距離。至於該如何備戰亞錦賽，林雍博則提及將加強基礎體能及提升力量。
+        </div>
+
+        <img class="moblie-img" src="./pic/can2.jpg">
+        <div class="moblie-imgcap">
+            輕艇競速選手林雍博、林雍傑，合力以13秒之差擊敗對手，奪下2020年亞洲輕艇競速錦標賽參賽資格。　圖／黃宥綺攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            本屆輕艇競速項目分為個人艇及雙人艇。林雍傑表示，雙人艇與搭檔間的溝通相對重要，還須同時注意划槳節奏、重心是否相同，並非由單人表現出色的兩位選手參賽，就可創下佳績，在默契培養上特別重要。他分享兩兄弟在訓練上常有摩擦，林雍傑說：「看弟弟跟看外人的標準不同，對他要求比較高，但近期有慢慢修正對他的看法。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            「持續進步，永遠不要滿足現在的成績，要不斷地突破自己。」自北市大畢業、現為國中特教老師的林雍傑仍在輕艇賽場上努力，他認為有家人、隊友的支持，遇到困難及挑戰更堅持下去，未來仍會兼顧工作及選手身分，但若過於忙碌，有可能慢慢退出。懷抱輕艇夢的兄弟檔也大方分享國外的參賽經驗，林雍傑提到國外的制度是台灣需要學習的地方。「要成為頂尖的運動員，必須對專長項目有非常大的熱愛，即使划到快厭倦時，也要告訴自己可以撐過去。」弟弟林雍博表示雖訓練上很辛苦，但他仍會堅持下去。他也談到國外參賽的落敗經驗，使他更有動力、想要加倍努力地追上其他選手，更期許自己未來在國際賽事有好表現。
+        </div>
+
+        <img class="moblie-img" src="./pic/can3.jpg">
+        <div class="moblie-imgcap">
+            輕艇競速選手、台北市立大學林雍博，賽前奮力練習，盼與哥哥林雍傑再創佳績。　圖／黃宥綺攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            而在加拿大式艇1000公尺賽事中，賴冠傑開賽時一馬當先，拉開與對手的距離，最終取得單人、雙人艇參賽資格。對於表現，他表示現在並非比賽密集時期，因此並未調整到最佳狀態，但這次的成績還算可以。
+        </div>
+
+
+        <img class="moblie-img" src="./pic/can4.jpg">
+        <div class="moblie-imgcap">
+            佛光大學賴冠傑在輕艇競速項目加拿大艇單人組中，擊敗對手，順利取得2020年亞洲輕艇競速錦標賽參賽資格。　圖／黃宥綺攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            「國外選手很努力，我們必須更努力。」經歷國際賽洗禮、也多次到國外訓練的賴冠傑提到，國外的環境跟資源都特別好。且國外選手有先天身材的優勢，本土選手必須更努力靠後天補足。而對於未來規劃，賴冠傑盼先拿到奧運資格，目標搶下2022年亞洲運動會輕艇競速前三名，若順利達成目標，將繼續朝奧運邁進。
+        </div>
+
+        <img class="moblie-img" src="./pic/can5.jpg">
+        <div class="moblie-imgcap">
+            佛光大學賴冠傑與搭檔沈博鴻在1000公尺雙人艇中，順利拔得頭籌，兩人開心慶賀。　圖／黃宥綺攝
+        </div>
+
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#亞洲輕艇競速錦標賽</p>
+            <p>#兄弟檔</p>
+            <p>#林雍傑</p>
+            <p>#林雍博</p>
+            <p>#賴冠傑</p>
+        </div>
+    </div>

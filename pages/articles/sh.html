@@ -1,0 +1,311 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .w-300 {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 1024px;
+        }
+
+        .background {
+            background-color: #F1F1F1;
+            width: 1024px;
+        }
+
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #656565;
+            border: 3px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .sub-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #BB6845;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .date {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #9C9C9C;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 10px;
+        }
+
+        .p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            text-decoration-line: none;
+            border-bottom: 1px;
+            color: #656565;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .heroimg {
+            width: 100%;
+        }
+
+        .heroimg-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #9C9C9C;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: initial;
+            height: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+        }
+
+        .img {
+            width: 58%;
+        }
+
+        .img-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 35px;
+            width: 38%;
+            padding-left: 30px;
+        }
+
+        .img-bg {
+            padding: 24px 24px 24px 24px;
+            background-color: #9C9C9C;
+        }
+
+        .note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            text-align: center;
+        }
+
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .tag {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 38px;
+            color: #BB6845;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .moblie-img {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .moblie-imgcap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #9C9C9C;
+            margin-top: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .moblie-note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            padding: 15px 55px 15px 55px;
+        }
+    </style>
+
+<body>
+    <!--桌機版-->
+    <div class="desktop-only w-1024 block-horizontal-center">
+
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">校園</h2>
+
+        <!-- title -->
+        <h1 class="title">世新學生會爆財務不透明　聲明引假法條惹議</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/29</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/sh2.png">
+                <figcaption class="heroimg-cap block-horizontal-center">世新大學學生自治會財務不透明相關時序。
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者白欣綜合報導】21日，世新大學學生在社群網站匿名發文，質疑世新學生自治會（以下簡稱學生會）在遞交給世新學生議會（以下簡稱議會）審查的活動預算案中，頁末標明「未經由學生會同意，請勿傳載此檔案」之舉，與5月競選提出的「定時公布學生會財務明細表與會議紀錄」政見相牴觸。該生指出，學生會並未履行選前承諾，且預算案資料過於簡略，甚至總金額加總也有誤，引發校內熱議。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/sh1.png">
+                <div class="img-cap">
+                    現任世新大學學生自治會會長、副會長，在選舉時，提出的政見主軸四，包含定時公布學生會財務明細與會議紀錄。　圖／取自簡廷家×李昕芸粉絲專頁
+
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            曾參與本屆學生會會長選舉、世新傳播管理學系學生林穎晟感嘆，近年學生對學生會的印象不佳，因此，資訊透明公開也是當初兩組會長候選人的共同目標，「結果最後是這樣，我非常心寒。」世新口語傳播學系學生吳敬家則認為，學生會作為校方與學生間溝通的橋樑，理應抱持謹慎的態度行事，而學生會的當務之急應為落實資訊公開的政見。
+        </div>
+
+        <div class="p block-horizontal-center">
+            與學生會不同，議會已將會議紀錄上傳至開放資訊平台，提供學生檢視議員工作成果。議會議長、世新新聞學系學生彭宬說明，無明文規定學生會須公開資訊，但議員們在評估過後認為，公開審議紀錄是唯一可讓學生掌握並了解會費使用狀況的方式，且這也是學生會會長的競選承諾，「如此才不負同學對自治體系的信任。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
+        </div>
+
+        <div class="p block-horizontal-center">
+            然而，翻開世新自治會法規，卻無學生會所言的依循內容。彭宬表示，自治會法規通篇未有學生會在該文提及的法則依據，學生會如此聲明，不僅是散布假消息，也是推卸責任的行為。他更直言道：「自治會法規是不能任意解釋，甚至隨便編造的。」對此，簡廷家解釋，學生會聲明文提到待公開的財務資訊，為經三讀程序後的法定預算，因此，才有認知落差，但並未正面回應法源依據的問題。
+        </div>
+
+        <div class="p block-horizontal-center">
+            此次學生會因未提供自治會法規中的《學生自治會學生預算法》（以下簡稱預算法）明定之期入期出概算、行政計畫企畫書、學生會資產清冊等資料被凍結。目前學生會雖已完成補件，但因內容過於簡略，再度引發學生討論。對於學生會的補件資料，吳敬家說：「學生會補交預算表卻內容簡陋，給人一種敷衍的感覺。」而彭宬也表示，會就此情況，在30日的審查會議向學生會提出改善要求。同時，也開放匿名表單，供學生填寫對於學生會的建議，屆時議會將一併要求學生會回覆。
+        </div>
+
+
+    <!--手機版-->
+
+    <div class="mobile-only w-300 block-horizontal-center">
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">校園</h2>
+
+        <!-- title -->
+        <h1 class="title">世新學生會爆財務不透明　聲明引假法條惹議</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/29</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/sh2.png">
+                <figcaption class="heroimg-cap block-horizontal-center">世新大學學生自治會財務不透明相關時序。
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者白欣綜合報導】21日，世新大學學生在社群網站匿名發文，質疑世新學生自治會（以下簡稱學生會）在遞交給世新學生議會（以下簡稱議會）審查的活動預算案中，頁末標明「未經由學生會同意，請勿傳載此檔案」之舉，與5月競選提出的「定時公布學生會財務明細表與會議紀錄」政見相牴觸。該生指出，學生會並未履行選前承諾，且預算案資料過於簡略，甚至總金額加總也有誤，引發校內熱議。
+        </div>
+
+                <img class="moblie-img" src="./pic/sh1.png">
+                <div class="moblie-imgcap">
+                    現任世新大學學生自治會會長、副會長，在選舉時，提出的政見主軸四，包含定時公布學生會財務明細與會議紀錄。　圖／取自簡廷家×李昕芸粉絲專頁
+
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            曾參與本屆學生會會長選舉、世新傳播管理學系學生林穎晟感嘆，近年學生對學生會的印象不佳，因此，資訊透明公開也是當初兩組會長候選人的共同目標，「結果最後是這樣，我非常心寒。」世新口語傳播學系學生吳敬家則認為，學生會作為校方與學生間溝通的橋樑，理應抱持謹慎的態度行事，而學生會的當務之急應為落實資訊公開的政見。
+        </div>
+
+        <div class="p block-horizontal-center">
+            與學生會不同，議會已將會議紀錄上傳至開放資訊平台，提供學生檢視議員工作成果。議會議長、世新新聞學系學生彭宬說明，無明文規定學生會須公開資訊，但議員們在評估過後認為，公開審議紀錄是唯一可讓學生掌握並了解會費使用狀況的方式，且這也是學生會會長的競選承諾，「如此才不負同學對自治體系的信任。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            對此，學生會24日在臉書粉絲專頁發表聲明，闡述暫時未公開的原因乃是根據<a href="https://drive.google.com/file/d/1FLykHK8Okn5Nk9zAFyWrW587Y-H8pQ4t/view?fbclid=IwAR1eyKi8h3WHUybRa3p76KxeYM8zyxUe6y_bPbn27sj7ivE01ZzrjSe84oE">《世新大學學生自治會法規彙編》</a>（以下簡稱自治會法規）規範，經議會三讀通過後才可公布財務資訊，未來通過後，會公告於臉書粉專等社群媒體。學生會會長、世新行政管理學系學生簡廷家允諾，將在30日審查過後，公開相關資料。
+        </div>
+
+        <div class="p block-horizontal-center">
+            然而，翻開世新自治會法規，卻無學生會所言的依循內容。彭宬表示，自治會法規通篇未有學生會在該文提及的法則依據，學生會如此聲明，不僅是散布假消息，也是推卸責任的行為。他更直言道：「自治會法規是不能任意解釋，甚至隨便編造的。」對此，簡廷家解釋，學生會聲明文提到待公開的財務資訊，為經三讀程序後的法定預算，因此，才有認知落差，但並未正面回應法源依據的問題。
+        </div>
+
+        <div class="p block-horizontal-center">
+            此次學生會因未提供自治會法規中的《學生自治會學生預算法》（以下簡稱預算法）明定之期入期出概算、行政計畫企畫書、學生會資產清冊等資料被凍結。目前學生會雖已完成補件，但因內容過於簡略，再度引發學生討論。對於學生會的補件資料，吳敬家說：「學生會補交預算表卻內容簡陋，給人一種敷衍的感覺。」而彭宬也表示，會就此情況，在30日的審查會議向學生會提出改善要求。同時，也開放匿名表單，供學生填寫對於學生會的建議，屆時議會將一併要求學生會回覆。
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#世新大學校園</p>
+            <p>#世新學生會</p>
+            <p>#世新學生議會</p>
+            <p>#總預算案</p>
+            <p>#財務資訊公開</p>
+        </div>
+    </div>

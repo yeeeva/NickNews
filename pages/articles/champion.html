@@ -1,0 +1,343 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .w-300 {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 1024px;
+        }
+
+        .background {
+            background-color: #F1F1F1;
+            width: 1024px;
+        }
+
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #656565;
+            border: 3px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .sub-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #BB6845;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .date {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #9C9C9C;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 10px;
+        }
+
+        .p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            text-decoration-line: none;
+            border-bottom: 1px;
+            color: #656565;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .heroimg {
+            width: 100%;
+        }
+
+        .heroimg-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #9C9C9C;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: initial;
+            height: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+        }
+
+        .img {
+            width: 58%;
+        }
+
+        .img-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 35px;
+            width: 38%;
+            padding-left: 30px;
+        }
+
+        .img-bg {
+            padding: 24px 24px 24px 24px;
+            background-color: #9C9C9C;
+        }
+
+        .note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            text-align: center;
+        }
+
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .tag {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 38px;
+            color: #BB6845;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .moblie-img {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .moblie-imgcap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #9C9C9C;
+            margin-top: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .moblie-note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            padding: 15px 55px 15px 55px;
+        }
+    </style>
+
+<body>
+    <!--桌機版-->
+    <div class="desktop-only w-1024 block-horizontal-center">
+
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">體育</h2>
+
+        <!-- title -->
+        <h1 class="title">攜手合作　景美師大聯隊力拔冠軍</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/01</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/c1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    108年協會盃拔河運動錦標賽，大專男子組600公斤級比賽時，台北市立大學選手透過不斷溝通，贏得勝利。　圖／劉庭莉攝
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者劉庭莉花蓮報導】「108年協會盃拔河運動錦標賽」暨「2019年國際拔河邀請賽」10月27、28日於花蓮縣立體育館舉行。其中，在國際邀請賽女子組540公斤級比賽中，由集結國立台灣師範大學與台北市立景美女子高級中學學生，共同組成的地主中華台北女子代表隊拿下勝利，而大專男子組600公斤級由台北市立大學奪冠，成功完成五連霸壯舉。
+        </div>
+
+        <div class="p block-horizontal-center">
+            國際邀請賽女子組540公斤級決賽一開始，中華隊及韓國女子代表隊雙方迅速壓低身體，準備進攻，伴隨整齊劃一的腳步，中華隊連勝兩場，奪得冠軍。副隊長、台師大學生李庭瑄表示，平常練習會做體能、重訓及模擬拉繩訓練，而這次比賽時，雖隊友有些狀況不穩，但隊伍整體狀況不錯，得以獲得勝利。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/c2.jpg">
+                <div class="img-cap">
+                    2019年國際拔河邀請賽女子組540公斤級，由地主中華台北女子代表隊守住勝利。　圖／劉庭莉攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            「比賽結果有達到預期，但姿勢、技術、耐力等，還可以更好，想向學姊看齊。」台師大學生黃方俞分享，自己常於賽前認為已準備充分，但在賽後檢討比賽、觀看比賽影片時，才發現自己的不足之處。對於這次勝利關鍵，她認為，拔河的秘訣是心態，如何在隊友失誤時沉著應對，以鼓勵代替責罵，凝聚向心力才能取得勝利。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/c3.jpg">
+                <div class="img-cap">
+                    2019年國際拔河邀請賽女子組540公斤級決賽時，中華台北女子代表隊奮力喊聲，提振士氣。　圖／劉庭莉攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            而大專男子組600公斤級由北市大，於三戰兩勝比賽中連勝兩場，擊敗國立體育大學，成功完成五連霸。北市大隊長傅傳隆表示，這次比賽體重處於劣勢，因此採取先防守的策略，以耐力取勝，再臨場做戰術變化。「這次比賽有許多團隊小細節要再修正，大一的動作要再調整，今日狀況不是很好，有出現一些團隊失誤。」傅傳隆認為，這次比賽北市大表現未達理想，比賽時經常重心不穩，幾乎就要壓到左邊線，而這樣的失誤本不應該發生。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/c4.jpg">
+                <div class="img-cap">
+                    108年協會盃拔河運動錦標賽大專男子組600公斤級，台北市立大學擊敗國立體育大學，成功完成五連霸壯舉。　圖／劉庭莉攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            自民國94年台灣於德國杜伊斯堡世界運動會摘金後，拔河便成為台灣運動發展項目之一，成為重要的里程碑。「目前政府推廣拔河項目透過兩種管道，一是補助國體，培育拔河選手，二是補助中華民國拔河運動協會，選拔國家拔河人才。」中華民國拔河運動協會副理事長郭志輝表示，協會未來目標是拔河能於各校園內廣傳，並讓拔河選手有專門培育的管道，使台灣於拔河項目中，取得更好的成績。
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#中華民國拔河運動協會</p>
+            <p>#北市大</p>
+            <p>#台師大</p>
+            <p>#拔河</p>
+            <p>#體育</p>
+        </div>
+    </div>
+
+
+    <!--手機版-->
+
+    <div class="mobile-only w-300 block-horizontal-center">
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">體育</h2>
+
+        <!-- title -->
+        <h1 class="title">攜手合作　景美師大聯隊力拔冠軍</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/11/01</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/c1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    108年協會盃拔河運動錦標賽，大專男子組600公斤級比賽時，台北市立大學選手透過不斷溝通，贏得勝利。　圖／劉庭莉攝
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者劉庭莉花蓮報導】「108年協會盃拔河運動錦標賽」暨「2019年國際拔河邀請賽」10月27、28日於花蓮縣立體育館舉行。其中，在國際邀請賽女子組540公斤級比賽中，由集結國立台灣師範大學與台北市立景美女子高級中學學生，共同組成的地主中華台北女子代表隊拿下勝利，而大專男子組600公斤級由台北市立大學奪冠，成功完成五連霸壯舉。
+        </div>
+
+        <div class="p block-horizontal-center">
+            國際邀請賽女子組540公斤級決賽一開始，中華隊及韓國女子代表隊雙方迅速壓低身體，準備進攻，伴隨整齊劃一的腳步，中華隊連勝兩場，奪得冠軍。副隊長、台師大學生李庭瑄表示，平常練習會做體能、重訓及模擬拉繩訓練，而這次比賽時，雖隊友有些狀況不穩，但隊伍整體狀況不錯，得以獲得勝利。
+        </div>
+
+        <img class="moblie-img" src="./pic/c2.jpg">
+        <div class="moblie-imgcap">
+            2019年國際拔河邀請賽女子組540公斤級，由地主中華台北女子代表隊守住勝利。　圖／劉庭莉攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            「比賽結果有達到預期，但姿勢、技術、耐力等，還可以更好，想向學姊看齊。」台師大學生黃方俞分享，自己常於賽前認為已準備充分，但在賽後檢討比賽、觀看比賽影片時，才發現自己的不足之處。對於這次勝利關鍵，她認為，拔河的秘訣是心態，如何在隊友失誤時沉著應對，以鼓勵代替責罵，凝聚向心力才能取得勝利。
+        </div>
+
+        <img class="moblie-img" src="./pic/c3.jpg">
+        <div class="moblie-imgcap">
+            2019年國際拔河邀請賽女子組540公斤級決賽時，中華台北女子代表隊奮力喊聲，提振士氣。　圖／劉庭莉攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            而大專男子組600公斤級由北市大，於三戰兩勝比賽中連勝兩場，擊敗國立體育大學，成功完成五連霸。北市大隊長傅傳隆表示，這次比賽體重處於劣勢，因此採取先防守的策略，以耐力取勝，再臨場做戰術變化。「這次比賽有許多團隊小細節要再修正，大一的動作要再調整，今日狀況不是很好，有出現一些團隊失誤。」傅傳隆認為，這次比賽北市大表現未達理想，比賽時經常重心不穩，幾乎就要壓到左邊線，而這樣的失誤本不應該發生。
+        </div>
+
+        <img class="moblie-img" src="./pic/c4.jpg">
+        <div class="moblie-imgcap">
+            108年協會盃拔河運動錦標賽大專男子組600公斤級，台北市立大學擊敗國立體育大學，成功完成五連霸壯舉。　圖／劉庭莉攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            自民國94年台灣於德國杜伊斯堡世界運動會摘金後，拔河便成為台灣運動發展項目之一，成為重要的里程碑。「目前政府推廣拔河項目透過兩種管道，一是補助國體，培育拔河選手，二是補助中華民國拔河運動協會，選拔國家拔河人才。」中華民國拔河運動協會副理事長郭志輝表示，協會未來目標是拔河能於各校園內廣傳，並讓拔河選手有專門培育的管道，使台灣於拔河項目中，取得更好的成績。
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#中華民國拔河運動協會</p>
+            <p>#北市大</p>
+            <p>#台師大</p>
+            <p>#拔河</p>
+            <p>#體育</p>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>

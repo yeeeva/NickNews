@@ -1,0 +1,328 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .w-300 {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 1024px;
+        }
+
+        .background {
+            background-color: #F1F1F1;
+            width: 1024px;
+        }
+
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #656565;
+            border: 3px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .sub-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #BB6845;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .date {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #9C9C9C;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 10px;
+        }
+
+        .p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            text-decoration-line: none;
+            border-bottom: 1px;
+            color: #656565;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .heroimg {
+            width: 100%;
+        }
+
+        .heroimg-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #9C9C9C;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: initial;
+            height: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+        }
+
+        .img {
+            width: 58%;
+        }
+
+        .img-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 35px;
+            width: 38%;
+            padding-left: 30px;
+        }
+
+        .img-bg {
+            padding: 24px 24px 24px 24px;
+            background-color: #9C9C9C;
+        }
+
+        .note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            text-align: center;
+        }
+
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .tag {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 38px;
+            color: #BB6845;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .moblie-img {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .moblie-imgcap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #9C9C9C;
+            margin-top: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .moblie-note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .chart {
+            width: 70%;
+        }
+
+    </style>
+
+<body>
+    <!--桌機版-->
+    <div class="desktop-only w-1024 block-horizontal-center">
+
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">校園</h2>
+
+        <!-- title -->
+        <h1 class="title">處理延宕　東吳銅像遷案遭退</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/12/20</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/scu1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    東吳大學雙溪校區中正圖書館內有蔣介石的銅像，引發校內對於轉型正義的討論。　圖／東吳學生會提供
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者劉庭莉綜合報導】東吳大學11日進行108學年度第一次校務會議，討論「東吳大學中正圖書館蔣介石先生銅像處理建議案」。由校務會議代表組成，包括學生、教師等的「東吳大學中正圖書館銅像處理委員會」（以下簡稱銅委會）提出將銅像遷移至校內其他地點，或贈予校外適當機構兩方案，然皆未被採納。校方以無共識為由，全案退回銅委會再討論。東吳學生會對此深表遺憾，並於當晚發表聲明指稱，校方蓄意拖延銅像處理進度。
+        </div>
+
+        <div class="p block-horizontal-center">
+            銅像議題在東吳已不是第一次被討論，自民國104年蔣介石銅像遭潑漆（註1）後，便引發各界關注。東吳學生會指出，銅委會討論銅像是否遷出圖書館已耗時近三年，除了經歷多次會議及公聽會討論，銅委會更發放問卷調查師生意見，結果顯示過半師生及校友同意銅像遷出圖書館。然校方在本次校務會議中，竟以無共識為由，拖延並退回銅像遷址方案。對此，學生會呼籲校方，正視學生、校友對於校園轉型正義的追求。
+        </div>
+
+        <div class="note">
+            註1：民國104年2月26日東吳大學中正圖書館內，蔣介石銅像遭東吳全球和解社以紅漆寫上「兇手」二字，並貼上「毋忘二二八」、「殺人魔王何須紀念」等標語，「中正圖書館」招牌亦被漆上「殺人兇手」四字。
+        </div>
+
+        <div class="img-bg" style="display: flex; justify-content: center;">
+                <img class="chart" src="./pic/scu2.png">
+        </div>
+
+        <div class="p block-horizontal-center">
+            據<a
+                href="https://www.cna.com.tw/news/ahel/201912110342.aspx">《中央社》</a>報導，東吳校長潘維大澄清，遷移案並非否決，而是退回銅委會再次研擬。潘維大說明，是因校務會議有代表認為，目前提出兩案背後的立論基礎與問卷設計等，尚有不清楚之處，因此提議退回銅委會再討論（註2）。銅委會副召集人、東吳政治學系學生黃彥誠表示，過半師生及校友已在問卷內表態，應將銅像遷出圖書館，有爭議之處應是遷至校內其他地點或遷出校園，但校務會議中，校方卻質疑問卷的正當性，迴避銅像的遷址問題。
+        </div>
+
+        <div class="note">
+            註2：東吳大學行政職員社會資源長王淑芳，於校務會議中提出維持原樣、加註處理過程說明之修正動議。
+        </div>
+
+        <div class="p block-horizontal-center">
+            談起積極推動銅像遷址的原因，東吳學生會會長、東吳政治學系碩士班學生張曾傑說：「現已進入民主時代，不應該有這樣威權的崇拜，所以才會認為要將銅像從校園移除。」他說明，銅像離開校園是去威權化的過程，也是他們處理銅像相關事宜時的基本立場。「圖書館是學生知識的泉源、學術自由之處，銅像這類威權符碼，不適合放在這種地方。」曾任東吳學生議會議長、國立政治大學公共行政學系碩士班學生陳法霖同樣認為，銅像不適合存放於高等教育機構內，應遷離校園。陳法霖指出，許多師長思想保守，銅像退出校園這條路難上加難。
+        </div>
+
+        <div class="p block-horizontal-center">
+            「於校務會議時，似乎大家對於這個議題，沒有想要保持開放心胸討論的感覺。」張曾傑回憶，會議中校方認為銅像遷出議題涉及政治，不願討論，他坦言，學生會有些受挫。張曾傑表示，學生會將持續追蹤此議題，並希望銅委會盡快進行下一步開會或提案的行動，比起潑漆等示威活動，「還是希望能透過銅委會這個正式管道處理。」
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#張曾傑</p>
+            <p>#東吳</p>
+            <p>#校園</p>
+            <p>#潘維大</p>
+            <p>#銅像</p>
+            <p>#黃彥誠</p>
+        </div>
+    </div>
+
+
+    <!--手機版-->
+
+    <div class="mobile-only w-300 block-horizontal-center">
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">校園</h2>
+
+        <!-- title -->
+        <h1 class="title">處理延宕　東吳銅像遷案遭退</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/12/20</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/scu1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    東吳大學雙溪校區中正圖書館內有蔣介石的銅像，引發校內對於轉型正義的討論。　圖／東吳學生會提供
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【記者劉庭莉綜合報導】東吳大學11日進行108學年度第一次校務會議，討論「東吳大學中正圖書館蔣介石先生銅像處理建議案」。由校務會議代表組成，包括學生、教師等的「東吳大學中正圖書館銅像處理委員會」（以下簡稱銅委會）提出將銅像遷移至校內其他地點，或贈予校外適當機構兩方案，然皆未被採納。校方以無共識為由，全案退回銅委會再討論。東吳學生會對此深表遺憾，並於當晚發表聲明指稱，校方蓄意拖延銅像處理進度。
+        </div>
+
+        <div class="p block-horizontal-center">
+            銅像議題在東吳已不是第一次被討論，自民國104年蔣介石銅像遭潑漆（註1）後，便引發各界關注。東吳學生會指出，銅委會討論銅像是否遷出圖書館已耗時近三年，除了經歷多次會議及公聽會討論，銅委會更發放問卷調查師生意見，結果顯示過半師生及校友同意銅像遷出圖書館。然校方在本次校務會議中，竟以無共識為由，拖延並退回銅像遷址方案。對此，學生會呼籲校方，正視學生、校友對於校園轉型正義的追求。
+        </div>
+
+        <div class="moblie-note">
+            註1：民國104年2月26日東吳大學中正圖書館內，蔣介石銅像遭東吳全球和解社以紅漆寫上「兇手」二字，並貼上「毋忘二二八」、「殺人魔王何須紀念」等標語，「中正圖書館」招牌亦被漆上「殺人兇手」四字。
+        </div>
+
+        <img class="moblie-img" src="./pic/scu2.png">
+
+        <div class="p block-horizontal-center">
+            據<a
+                href="https://www.cna.com.tw/news/ahel/201912110342.aspx">《中央社》</a>報導，東吳校長潘維大澄清，遷移案並非否決，而是退回銅委會再次研擬。潘維大說明，是因校務會議有代表認為，目前提出兩案背後的立論基礎與問卷設計等，尚有不清楚之處，因此提議退回銅委會再討論（註2）。銅委會副召集人、東吳政治學系學生黃彥誠表示，過半師生及校友已在問卷內表態，應將銅像遷出圖書館，有爭議之處應是遷至校內其他地點或遷出校園，但校務會議中，校方卻質疑問卷的正當性，迴避銅像的遷址問題。
+        </div>
+
+        <div class="moblie-note">
+            註2：東吳大學行政職員社會資源長王淑芳，於校務會議中提出維持原樣、加註處理過程說明之修正動議。
+        </div>
+
+        <div class="p block-horizontal-center">
+            談起積極推動銅像遷址的原因，東吳學生會會長、東吳政治學系碩士班學生張曾傑說：「現已進入民主時代，不應該有這樣威權的崇拜，所以才會認為要將銅像從校園移除。」他說明，銅像離開校園是去威權化的過程，也是他們處理銅像相關事宜時的基本立場。「圖書館是學生知識的泉源、學術自由之處，銅像這類威權符碼，不適合放在這種地方。」曾任東吳學生議會議長、國立政治大學公共行政學系碩士班學生陳法霖同樣認為，銅像不適合存放於高等教育機構內，應遷離校園。陳法霖指出，許多師長思想保守，銅像退出校園這條路難上加難。
+        </div>
+
+        <div class="p block-horizontal-center">
+            「於校務會議時，似乎大家對於這個議題，沒有想要保持開放心胸討論的感覺。」張曾傑回憶，會議中校方認為銅像遷出議題涉及政治，不願討論，他坦言，學生會有些受挫。張曾傑表示，學生會將持續追蹤此議題，並希望銅委會盡快進行下一步開會或提案的行動，比起潑漆等示威活動，「還是希望能透過銅委會這個正式管道處理。」
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#張曾傑</p>
+            <p>#東吳</p>
+            <p>#校園</p>
+            <p>#潘維大</p>
+            <p>#銅像</p>
+            <p>#黃彥誠</p>
+        </div>
+    </div>

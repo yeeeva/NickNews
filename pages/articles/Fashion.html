@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <!--告訴瀏覽器要根據載具的大小來呈現網頁-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">
+
+    <style>
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .iphone8 {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .w-1024 {
+            width: 1024px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        body {
+            background-color: #F1F1F1;
+        }
+
+        .header {
+            height: 60px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .topic {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            color: #BB6845;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 50px;
+            /* or 147% */
+            color: #656565;
+        }
+
+
+        .article {
+            width: calc(300/375*100%);
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #656565;
+            margin-top: 42px;
+            margin-bottom: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .youtube-embed {
+            position: relative;
+            padding-bottom: calc(541/941*100%);
+        }
+
+        .name {
+            font-size: 18px;
+            line-height: 19px;
+            margin-bottom: 45px;
+            color: #9C9C9C
+        }
+
+        /* viewport width >1023px 是電腦版的話*/
+        @media(min-width: 1023px) {
+            .header {
+                height: 80px;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 55px;
+                padding-bottom: 55px;
+            }
+
+            .topic {
+                font-size: 22px;
+                line-height: 33px;
+            }
+
+            .title {
+                font-size: 42px;
+                line-height: 63px;
+                text-align: center
+            }
+
+            .name {
+                font-size: 18px;
+                line-height: 19px;
+                margin-left: 200px;
+                margin-top: 25px;
+                color: #9C9C9C;
+            }
+
+
+
+            .article {
+                float: inherit;
+                width: 833px;
+                height: 415px;
+                left: 98px;
+                top: 1235px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 60px;
+                /* or 167% */
+                text-align: center;
+                padding-right: 100px;
+                padding-left: 100px;
+                padding-top: 109px;
+                color: #656565;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="iphone8 mobile-only">
+        <div style="width:calc(326/375*100%);" class="center">
+            <h2 class="topic">影音新聞</h2>
+            <h1 class="title">遺失的服裝靈魂<br>台灣打版人才斷層危機
+            </h1>
+            <div class="name">黃易凡、洪靖淳、涂葦慈、簡毅慧</div>
+        </div>
+        <!--  viedo image -->
+        <div style="margin-bottom: 20px;">
+            <div class="youtube-embed">
+                <iframe style="position: absolute;" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/abRkZTQAkKk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="article center">
+                伸展台上，華麗衣服在鎂光燈之間穿梭。台灣時裝產業裡，設計師是眾所矚目的焦點，也是服裝科系學生的夢幻職業，
+                但你知道嗎？在他們競相追逐的過程中，台灣時裝產業的地基，卻也一點一點地被掏空。 </div>
+        </div>
+    </div>
+    <div class="w-1024 desktop-only">
+        <div class="topic">影音新聞</div>
+        <div class="title">遺失的服裝靈魂 台灣打版人才斷層危機</div>
+        <div class="name">黃易凡、洪靖淳、涂葦慈、簡毅慧 </div>
+        <!--  viedo image -->
+        <div style="margin-bottom: 20px;">
+            <div class="youtube-embed">
+                <iframe style="position: absolute;" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/abRkZTQAkKk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="article center">
+                伸展台上，華麗衣服在鎂光燈之間穿梭。台灣時裝產業裡，設計師是眾所矚目的焦點，也是服裝科系學生的夢幻職業，
+                但你知道嗎？在他們競相追逐的過程中，台灣時裝產業的地基，卻也一點一點地被掏空。
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

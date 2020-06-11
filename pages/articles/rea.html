@@ -1,0 +1,549 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @media all and (min-width: 1024px) {
+            .mobile-only {
+                /* don't display at desktop */
+                display: none;
+            }
+        }
+
+        @media all and (max-width: 1024px) {
+            .desktop-only {
+                /* don't display at mobile */
+                display: none;
+            }
+        }
+
+        .w-300 {
+            width: 100%;
+        }
+
+        .w-1024 {
+            width: 1024px;
+        }
+
+        .background {
+            background-color: #F1F1F1;
+            width: 1024px;
+        }
+
+        .title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 63px;
+            color: #656565;
+            border: 3px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .sub-title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 33px;
+            color: #BB6845;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .date {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 19px;
+            color: #9C9C9C;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 10px;
+        }
+
+        .p {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 35px;
+            text-decoration-line: none;
+            border-bottom: 1px;
+            color: #656565;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .heroimg {
+            width: 100%;
+        }
+
+        .heroimg-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 38px;
+            color: #9C9C9C;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .line {
+            width: initial;
+            height: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+        }
+
+        .img {
+            width: 58%;
+        }
+
+        .img-cap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #FFFFFF;
+            margin-top: 35px;
+            width: 38%;
+            padding-left: 30px;
+        }
+
+        .img-bg {
+            padding: 24px 24px 24px 24px;
+            background-color: #9C9C9C;
+        }
+
+        .note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            text-align: center;
+        }
+
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .tag {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 38px;
+            color: #BB6845;
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .moblie-img {
+            width: 90%;
+            margin: 20px;
+        }
+
+        .moblie-imgcap {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #9C9C9C;
+            margin-top: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .moblie-note {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 35px;
+            color: #9C9C9C;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .b {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 38px;
+            color: rgb(51, 51, 51);
+            border: 2px;
+            padding: 15px 55px 15px 55px;
+        }
+
+        .chart {
+            width: 70%
+        }
+    </style>
+
+<body>
+    <!--桌機版-->
+    <div class="desktop-only w-1024 block-horizontal-center">
+
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">專題</h2>
+
+        <!-- title -->
+        <h1 class="title">出版寒冬中的一道曙光？　電子書帶起閱讀新契機</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/04/17</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/rea1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    電子書因無法翻閱，閱讀時與紙本書感受不同，進而影響讀者購買意願。　圖／樂天Kobo提供
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【專題記者姜期儒、黃宥綺、陳宣懿、李昱亭綜合報導】實體出版業營業額急遽下跌、新書出版量創歷史新低，書店等實體書通路紛紛閉店或轉型……「因應網路時代，出版界必須找到新的方向。」春山出版總編輯莊瑞琳說。數位時代的來臨，使出版社開始思考跨足數位出版領域。然而，看似前景看好的「電子書」市場，雖銷售量逐年穩定成長，但仍存在發展困境。在現今的情況下，電子書的發展是否能突破瓶頸，幫助出版業改善現況，進而成為寒冬中的一道曙光呢？
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/rea2.jpg">
+                <div class="img-cap">
+                    台灣電子書通路商為滿足讀者數位化閱讀的需求，紛紛推出閱讀器供讀者選購。　圖／陳宣懿攝
+                </div>
+            </div>
+        </div>
+
+        <div class="b block-horizontal-center">
+            實體新書出版量逐年下滑　出版社另闢電子書市場
+        </div>
+
+        <div class="p block-horizontal-center">
+            「因為大家的閱讀習慣改變，所以閱讀市場正在萎縮。」城邦出版集團總經理林福益一語道破出版業現況。根據國家圖書館發布的《民國108年台灣圖書出版現況及趨勢報告》，108年新書出版量為3萬6810種，相較於106年的4萬401種、107年的3萬9114種，連續兩年新書出版量呈現下滑趨勢，更創下18年來的新低點。
+        </div>
+
+        <div class="p block-horizontal-center">
+            除新書出版量減少外，實體出版產業的營業額也逐年遞減，108年的營業額甚至不到十年前的1/4。對此，林福益坦言，實體出版營業額腰斬是雪崩式的崩壞。遠流出版行銷企劃沈嘉悅也說：「某種程度上這樣子的衰退，是考驗出版社體質到底健不健全的一個時機點。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            面對實體出版市場萎縮，許多出版社開始嘗試跨足電子書市場。電子書平台樂天Kobo營運部長周立涵說：「從2018年下半年到2019年，出版社的電子書轉製率（註1）跟過往比起來高很多。」聯經出版總經理陳芝宇表示，聯經出版已成立數位出版中心，除迎接新機會，也致力留下數位資產。莊瑞琳則認為電子書是未來的趨勢，也是另外一個多元的發展管道，並期待電子書能帶動整個出版業。
+        </div>
+
+        <div class="note">
+            註1：將紙本書轉換成數位格式，以出版電子書。
+        </div>
+
+        <div class="p block-horizontal-center">
+            106年，台灣目前最大的出版通路商博客來進入電子書市場，提供更多出版社製作電子書的動機。全台電子書的出版量佔整體出版量在106年首次突破10％，相較105年的5.16％，呈現大幅度的成長。台灣數位出版聯盟秘書長林柏村補充，依照數位出版聯盟及電子書協會的預估，每年新出版加上回溯舊出版的電子書，共有1萬5000本左右。另一方面，電子書銷售量也逐年攀升，呈現穩定成長趨勢。莊瑞琳補充，電子書產值從106年的3.59億到現在已有5億元，雖然出版書種不如實體書多，仍對出版業的銷售有部分貢獻。
+        </div>
+
+        <div class="p block-horizontal-center">
+            事實上，電子書市場雖前景看好，目前的市場規模仍非常小。根據財政部營利事業家數及銷售額統計資料，108年實體書籍出版的年銷售額可達到190億元，而數位書籍出版的年銷售額僅有5億元。沈嘉悅表示，不光是台灣，現在全世界電子書的銷售額還是遠低於實體書。
+        </div>
+
+        <div class="b block-horizontal-center">
+            電子書市待活絡　價格及閱讀體驗成關鍵
+        </div>
+
+        <div class="p block-horizontal-center">
+            「紙本跟電子書的價格並沒有太大差別。」沈嘉悅說明，台灣電子書售價通常為紙本書定價的七折，但紙本新書上市時也有79折優惠。電子書與實體書價差不大，降低消費者選擇電子書的誘因。林福益解釋，台灣並未像國外有訂定新書統一制價權（註2）。他認為電子書應為紙本書定價的四折到六折，這樣的價差才足夠吸引讀者購買電子書。
+        </div>
+
+        <div class="note">
+            註2：國外新書在上架時，規定在一定期限內不得打折，如此一來電子書會與紙本書產生價差，進而增加消費者購買電子書的意願。
+        </div>
+
+        <div class="p block-horizontal-center">
+            在電子書銷量無法提升的情況下，因營收貢獻佔比小，出版社便會優先行銷紙本書。沈嘉悅直言，出版社多以銷售利潤為優先考量，所以大部分出版社仍把資源投入在實體書市場，以確保成本得以回收。若電子書市場還未成形，出版社投入的資源自然就不會多，進而導致電子書市場無法更加擴大。
+        </div>
+
+        <div class="p block-horizontal-center">
+            讀者在閱讀電子書和紙本書的感受不同，也可能影響消費者購買電子書的意願。詩人陳雋弘分享，因電子書缺少翻閱的感覺，讓訊息變得破碎，因此他完全無法習慣。對此，林福益提到，若編輯未能正確校對書本內容或標點符號，一旦轉為電子檔，排版格式會跑掉，造成電子書讀者閱讀的困難。然而大部分的出版社未設有獨立部門處理電子書的品質，導致電子書品質無法有效把關，只能靠電子書通路平台處理。
+        </div>
+
+        <div class="p block-horizontal-center">
+            電子書通路平台讀墨行銷總監何宛芳表示，讀墨參考數位出版聯盟提出的「台灣Epub3製作指引」，於官網公布「讀墨電子書製作準則」供合作廠商初次上架前翻閱。林柏村也表示，現在台灣各大電子書通路平台皆遵照國際通用格式（Epub3）上架電子書，核心目標是讓電子書能相容在每個平台。推動繁體中文電子書格式統一的汪達數位出版公司創辦人董福興表示，隨著閱讀器市場近年不斷成長，以往缺字、切圖的常見格式問題已被妥善解決。
+        </div>
+        <div class="p block-horizontal-center">
+            除遵照Epub3上架電子書，解決格式問題外，電子書通路平台近年也致力優化讀者閱讀體驗。何宛芳認為，讓閱讀器服務盡量符合消費者需求，不讓載體成為使用電子書的門檻，才是平台商推廣電子書重要的事。周立涵也說，首要目標是讓消費者願意嘗試閱讀電子書，促進電子書市場的成長。
+        </div>
+
+        <div class="b block-horizontal-center">
+            版權問題成發展阻力？出版社走向「全版權談判」
+        </div>
+
+        <div class="p block-horizontal-center">
+            電子書市場的發展困境不只價格誘因小，以及使用者閱讀體驗這兩個問題。電子書使用者郭美妤表示，他曾遇過想看的書沒有電子書版本，因此只好到實體書通路購買或借閱。可見現今電子書種類仍未如紙本書齊全。
+        </div>
+
+        <div class="p block-horizontal-center">
+            以讀墨的「2019年百大暢銷排行榜」為例，翻譯書就佔了2/3，可見台灣消費者對翻譯書的需求大。然而林福益坦言，出版社過去沒有外文電子書版權的談判慣例，且國外版權的協商較耗時，有時甚至需花上數年。他進一步解釋，在網路普及以前，外文書要翻譯成繁體中文發行並不容易，所以作者願意授權給台灣出版社華文地區的發行權。不過一旦變成電子書，國外出版社就可以直接利用網路行銷全世界，不用假手他人，台灣出版社在版權談判上也因此更加不利。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/rea7.jpg">
+                <div class="img-cap">
+                    城邦出版集團總經理林福益認為，電子書必然為閱讀新趨勢，全版權談判有助出版社出版電子書。　圖／李昱亭攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            「除非出版社對這本書有信心，不然購買版權也是一個成本。」沈嘉悅解釋，通常外文書版權皆以紙本為主，電子書的版權要額外購買，也是使出版社卻步原因之一。他補充，若有些書的調性適合電子化（如工具書），且有明確的推廣目標，出版社才會考慮出版電子書。
+        </div>
+
+        <div class="p block-horizontal-center">
+            比起外文書，台灣本土作家的作品雖較少遇到版權問題，但林福益表示，也有少部分作家擔心網路盜版，因此拒絕電子書授權。國立政治大學廣播電視學系助理教授盧建誌指出，數位出版品的版權顛覆了傳統財產權的概念。「數位格式不會耗損。」他認為，數位格式容易複製與分享，可能造成部分作家不願授權電子書版權。作家渺渺則認為，版權問題在任何形式的出版品上都會發生，因此不會太過擔心安全性的問題。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/rea8.jpg">
+                <div class="img-cap">
+                    因電子書版權取得較困難，因此現今紙本書種類較電子書齊全。　圖／李昱亭攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            作家林達陽說：「大多數的出版社在簽實體書版權合約時，都會一起簽電子書的版權合約。」他表示，雖然合約條件都不會非常好，但部分作家不再以出版書籍為主要收入來源，因此大多數都還是會授權。陳雋弘則分享，紙本書與電子書版權合約存在差異，作者可收取到的費用不同，而電子書分給作者的費用比例通常較大。
+        </div>
+
+        <div class="p block-horizontal-center">
+            「電子書完全就是趨勢，市場必須投入和開發。」林福益表示，城邦出版近五年來不斷努力爭取電子版權，現在更走向「全版權談判」，將紙本、電子書、有聲書的版權全部買下來。陳芝宇也認為，隨著電子書逐漸成熟普及，「在簽紙本書的一開始就把電子書簽下來，是最理想的。」
+        </div>
+
+        <div class="b block-horizontal-center">
+            電子書走向EP同步 協會擬培育專業人才
+        </div>
+
+        <div class="p block-horizontal-center">
+            林福益表示，為活絡電子書市場，需思考如何鼓勵出版社推出EP同步（註3）的電子書。林柏村說明，由於EP同步電子書的編輯流程需分開處理，出版社為了讓編輯掌握製作流程，需進行內部人員教育訓練，增加出版社的成本，影響其製作EP同步電子書的意願。
+        </div>
+
+        <div class="img-bg">
+            <div style="display: flex; align-items: flex-end;">
+                <img class="img" src="./pic/rea9.jpg">
+                <div class="img-cap">
+                    林柏村指出，為提升EP同步的數量，台灣電子書協會將於未來推動相關專業人才證照。　圖／陳宣懿攝
+                </div>
+            </div>
+        </div>
+
+        <div class="p block-horizontal-center">
+            針對此問題，林柏村表示，台灣電子書協會計畫推動電子書專業職能證照。期盼透過此證照制度，協助出版社或平台聘請具電子書相關知識人員，降低出版社人事成本。未來也希望與大學相關科系合作，培育數位出版人才。
+        </div>
+
+        <div class="note">
+            註3：書籍的數位（E）與紙本（P）版本同時發行。
+        </div>
+
+        <div class="p block-horizontal-center">
+            陳雋弘直言，「出版必然持續崩潰，但也不會完全消失。」紙本書出版量下降、實體出版業產值萎縮已是大勢所趨。雖電子書仍有其發展上的瓶頸，但陳芝宇對此持樂觀態度。他表示，當許多有利條件水到渠成，接下來的環境將對電子書愈來愈有利，對出版社也會有幫助。莊瑞琳也認為，現代人的生活習慣改變，使用的媒介也在變化，所以電子書市場或許能跟實體書市場共同成長。
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#出版社</p>
+            <p>#專題</p>
+            <p>#數位出版</p>
+            <p>#版權</p>
+            <p>#紙本書</p>
+            <p>#電子書</p>
+        </div>
+    </div>
+
+
+    <!--手機版-->
+
+    <div class="mobile-only w-300 block-horizontal-center">
+        <!--上面要放header的code-->
+
+        <!-- subtitle -->
+        <h2 class="sub-title">專題</h2>
+
+        <!-- title -->
+        <h1 class="title">出版寒冬中的一道曙光？　電子書帶起閱讀新契機</h1>
+
+        <!-- date -->
+        <h3 class="date">刊出日期：2019/04/17</h3>
+
+        <!-- hero image-->
+        <div>
+            <figure>
+                <img class="heroimg" src="./pic/rea1.jpg">
+                <figcaption class="heroimg-cap block-horizontal-center">
+                    電子書因無法翻閱，閱讀時與紙本書感受不同，進而影響讀者購買意願。　圖／樂天Kobo提供
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="line">
+        </div>
+
+        <div class="p block-horizontal-center">
+            【專題記者姜期儒、黃宥綺、陳宣懿、李昱亭綜合報導】實體出版業營業額急遽下跌、新書出版量創歷史新低，書店等實體書通路紛紛閉店或轉型……「因應網路時代，出版界必須找到新的方向。」春山出版總編輯莊瑞琳說。數位時代的來臨，使出版社開始思考跨足數位出版領域。然而，看似前景看好的「電子書」市場，雖銷售量逐年穩定成長，但仍存在發展困境。在現今的情況下，電子書的發展是否能突破瓶頸，幫助出版業改善現況，進而成為寒冬中的一道曙光呢？
+        </div>
+
+        <img class="moblie-img" src="./pic/rea2.jpg">
+        <div class="moblie-imgcap">
+            台灣電子書通路商為滿足讀者數位化閱讀的需求，紛紛推出閱讀器供讀者選購。　圖／陳宣懿攝
+        </div>
+
+        <div class="b block-horizontal-center">
+            實體新書出版量逐年下滑　出版社另闢電子書市場
+        </div>
+
+        <div class="p block-horizontal-center">
+            「因為大家的閱讀習慣改變，所以閱讀市場正在萎縮。」城邦出版集團總經理林福益一語道破出版業現況。根據國家圖書館發布的《民國108年台灣圖書出版現況及趨勢報告》，108年新書出版量為3萬6810種，相較於106年的4萬401種、107年的3萬9114種，連續兩年新書出版量呈現下滑趨勢，更創下18年來的新低點。
+        </div>
+
+        <div class="p block-horizontal-center">
+            除新書出版量減少外，實體出版產業的營業額也逐年遞減，108年的營業額甚至不到十年前的1/4。對此，林福益坦言，實體出版營業額腰斬是雪崩式的崩壞。遠流出版行銷企劃沈嘉悅也說：「某種程度上這樣子的衰退，是考驗出版社體質到底健不健全的一個時機點。」
+        </div>
+
+        <div class="p block-horizontal-center">
+            面對實體出版市場萎縮，許多出版社開始嘗試跨足電子書市場。電子書平台樂天Kobo營運部長周立涵說：「從2018年下半年到2019年，出版社的電子書轉製率（註1）跟過往比起來高很多。」聯經出版總經理陳芝宇表示，聯經出版已成立數位出版中心，除迎接新機會，也致力留下數位資產。莊瑞琳則認為電子書是未來的趨勢，也是另外一個多元的發展管道，並期待電子書能帶動整個出版業。
+        </div>
+
+        <div class="moblie-note">
+            註1：將紙本書轉換成數位格式，以出版電子書。
+        </div>
+
+        <div class="p block-horizontal-center">
+            106年，台灣目前最大的出版通路商博客來進入電子書市場，提供更多出版社製作電子書的動機。全台電子書的出版量佔整體出版量在106年首次突破10％，相較105年的5.16％，呈現大幅度的成長。台灣數位出版聯盟秘書長林柏村補充，依照數位出版聯盟及電子書協會的預估，每年新出版加上回溯舊出版的電子書，共有1萬5000本左右。另一方面，電子書銷售量也逐年攀升，呈現穩定成長趨勢。莊瑞琳補充，電子書產值從106年的3.59億到現在已有5億元，雖然出版書種不如實體書多，仍對出版業的銷售有部分貢獻。
+        </div>
+
+        <div class="p block-horizontal-center">
+            事實上，電子書市場雖前景看好，目前的市場規模仍非常小。根據財政部營利事業家數及銷售額統計資料，108年實體書籍出版的年銷售額可達到190億元，而數位書籍出版的年銷售額僅有5億元。沈嘉悅表示，不光是台灣，現在全世界電子書的銷售額還是遠低於實體書。
+        </div>
+
+        <div class="b block-horizontal-center">
+            電子書市待活絡　價格及閱讀體驗成關鍵
+        </div>
+
+        <div class="p block-horizontal-center">
+            「紙本跟電子書的價格並沒有太大差別。」沈嘉悅說明，台灣電子書售價通常為紙本書定價的七折，但紙本新書上市時也有79折優惠。電子書與實體書價差不大，降低消費者選擇電子書的誘因。林福益解釋，台灣並未像國外有訂定新書統一制價權（註2）。他認為電子書應為紙本書定價的四折到六折，這樣的價差才足夠吸引讀者購買電子書。
+        </div>
+
+        <div class="moblie-note">
+            註2：國外新書在上架時，規定在一定期限內不得打折，如此一來電子書會與紙本書產生價差，進而增加消費者購買電子書的意願。
+        </div>
+
+        <div class="p block-horizontal-center">
+            在電子書銷量無法提升的情況下，因營收貢獻佔比小，出版社便會優先行銷紙本書。沈嘉悅直言，出版社多以銷售利潤為優先考量，所以大部分出版社仍把資源投入在實體書市場，以確保成本得以回收。若電子書市場還未成形，出版社投入的資源自然就不會多，進而導致電子書市場無法更加擴大。
+        </div>
+
+        <div class="p block-horizontal-center">
+            讀者在閱讀電子書和紙本書的感受不同，也可能影響消費者購買電子書的意願。詩人陳雋弘分享，因電子書缺少翻閱的感覺，讓訊息變得破碎，因此他完全無法習慣。對此，林福益提到，若編輯未能正確校對書本內容或標點符號，一旦轉為電子檔，排版格式會跑掉，造成電子書讀者閱讀的困難。然而大部分的出版社未設有獨立部門處理電子書的品質，導致電子書品質無法有效把關，只能靠電子書通路平台處理。
+        </div>
+
+        <div class="p block-horizontal-center">
+            電子書通路平台讀墨行銷總監何宛芳表示，讀墨參考數位出版聯盟提出的「台灣Epub3製作指引」，於官網公布「讀墨電子書製作準則」供合作廠商初次上架前翻閱。林柏村也表示，現在台灣各大電子書通路平台皆遵照國際通用格式（Epub3）上架電子書，核心目標是讓電子書能相容在每個平台。推動繁體中文電子書格式統一的汪達數位出版公司創辦人董福興表示，隨著閱讀器市場近年不斷成長，以往缺字、切圖的常見格式問題已被妥善解決。
+        </div>
+        <div class="p block-horizontal-center">
+            除遵照Epub3上架電子書，解決格式問題外，電子書通路平台近年也致力優化讀者閱讀體驗。何宛芳認為，讓閱讀器服務盡量符合消費者需求，不讓載體成為使用電子書的門檻，才是平台商推廣電子書重要的事。周立涵也說，首要目標是讓消費者願意嘗試閱讀電子書，促進電子書市場的成長。
+        </div>
+
+        <div class="b block-horizontal-center">
+            版權問題成發展阻力？出版社走向「全版權談判」
+        </div>
+
+        <div class="p block-horizontal-center">
+            電子書市場的發展困境不只價格誘因小，以及使用者閱讀體驗這兩個問題。電子書使用者郭美妤表示，他曾遇過想看的書沒有電子書版本，因此只好到實體書通路購買或借閱。可見現今電子書種類仍未如紙本書齊全。
+        </div>
+
+        <div class="p block-horizontal-center">
+            以讀墨的「2019年百大暢銷排行榜」為例，翻譯書就佔了2/3，可見台灣消費者對翻譯書的需求大。然而林福益坦言，出版社過去沒有外文電子書版權的談判慣例，且國外版權的協商較耗時，有時甚至需花上數年。他進一步解釋，在網路普及以前，外文書要翻譯成繁體中文發行並不容易，所以作者願意授權給台灣出版社華文地區的發行權。不過一旦變成電子書，國外出版社就可以直接利用網路行銷全世界，不用假手他人，台灣出版社在版權談判上也因此更加不利。
+        </div>
+
+        <img class="moblie-img" src="./pic/rea7.jpg">
+        <div class="moblie-imgcap">
+            城邦出版集團總經理林福益認為，電子書必然為閱讀新趨勢，全版權談判有助出版社出版電子書。　圖／李昱亭攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            「除非出版社對這本書有信心，不然購買版權也是一個成本。」沈嘉悅解釋，通常外文書版權皆以紙本為主，電子書的版權要額外購買，也是使出版社卻步原因之一。他補充，若有些書的調性適合電子化（如工具書），且有明確的推廣目標，出版社才會考慮出版電子書。
+        </div>
+
+        <div class="p block-horizontal-center">
+            比起外文書，台灣本土作家的作品雖較少遇到版權問題，但林福益表示，也有少部分作家擔心網路盜版，因此拒絕電子書授權。國立政治大學廣播電視學系助理教授盧建誌指出，數位出版品的版權顛覆了傳統財產權的概念。「數位格式不會耗損。」他認為，數位格式容易複製與分享，可能造成部分作家不願授權電子書版權。作家渺渺則認為，版權問題在任何形式的出版品上都會發生，因此不會太過擔心安全性的問題。
+        </div>
+
+
+        <img class="moblie-img" src="./pic/rea8.jpg">
+        <div class="moblie-imgcap">
+            因電子書版權取得較困難，因此現今紙本書種類較電子書齊全。　圖／李昱亭攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            作家林達陽說：「大多數的出版社在簽實體書版權合約時，都會一起簽電子書的版權合約。」他表示，雖然合約條件都不會非常好，但部分作家不再以出版書籍為主要收入來源，因此大多數都還是會授權。陳雋弘則分享，紙本書與電子書版權合約存在差異，作者可收取到的費用不同，而電子書分給作者的費用比例通常較大。
+        </div>
+
+        <div class="p block-horizontal-center">
+            「電子書完全就是趨勢，市場必須投入和開發。」林福益表示，城邦出版近五年來不斷努力爭取電子版權，現在更走向「全版權談判」，將紙本、電子書、有聲書的版權全部買下來。陳芝宇也認為，隨著電子書逐漸成熟普及，「在簽紙本書的一開始就把電子書簽下來，是最理想的。」
+        </div>
+
+        <div class="b block-horizontal-center">
+            電子書走向EP同步 協會擬培育專業人才
+        </div>
+
+        <div class="p block-horizontal-center">
+            林福益表示，為活絡電子書市場，需思考如何鼓勵出版社推出EP同步（註3）的電子書。林柏村說明，由於EP同步電子書的編輯流程需分開處理，出版社為了讓編輯掌握製作流程，需進行內部人員教育訓練，增加出版社的成本，影響其製作EP同步電子書的意願。
+        </div>
+
+        <img class="moblie-img" src="./pic/rea9.jpg">
+        <div class="moblie-imgcap">
+            林柏村指出，為提升EP同步的數量，台灣電子書協會將於未來推動相關專業人才證照。　圖／陳宣懿攝
+        </div>
+
+        <div class="p block-horizontal-center">
+            針對此問題，林柏村表示，台灣電子書協會計畫推動電子書專業職能證照。期盼透過此證照制度，協助出版社或平台聘請具電子書相關知識人員，降低出版社人事成本。未來也希望與大學相關科系合作，培育數位出版人才。
+        </div>
+
+        <div class="moblie-note">
+            註3：書籍的數位（E）與紙本（P）版本同時發行。
+        </div>
+
+        <div class="p block-horizontal-center">
+            陳雋弘直言，「出版必然持續崩潰，但也不會完全消失。」紙本書出版量下降、實體出版業產值萎縮已是大勢所趨。雖電子書仍有其發展上的瓶頸，但陳芝宇對此持樂觀態度。他表示，當許多有利條件水到渠成，接下來的環境將對電子書愈來愈有利，對出版社也會有幫助。莊瑞琳也認為，現代人的生活習慣改變，使用的媒介也在變化，所以電子書市場或許能跟實體書市場共同成長。
+        </div>
+
+        <div class="tag">
+            <p>#大學報</p>
+            <p>#出版社</p>
+            <p>#專題</p>
+            <p>#數位出版</p>
+            <p>#版權</p>
+            <p>#紙本書</p>
+            <p>#電子書</p>
+        </div>
+    </div>
+</body>
+</head>
+
+</html>
