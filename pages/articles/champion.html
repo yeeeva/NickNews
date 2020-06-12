@@ -76,7 +76,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 35px;
             text-decoration-line: none;
             border-bottom: 1px;
@@ -92,7 +92,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 38px;
             color: #9C9C9C;
             text-align: center;
@@ -163,7 +163,7 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 18px;
+            font-size: 15px;
             line-height: 25px;
             color: #9C9C9C;
             margin-top: 10px;
@@ -192,6 +192,34 @@
             background-color: #F1F1F1;
         }
 
+        a:link {
+            /*設定還沒有瀏覽過的連結*/
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            /* 設定已經瀏覽過的連結 */
+            color: #FFFFFF;
+        }
+
+        a:hover {
+            /*設定滑鼠移經的連結*/
+            text-decoration: underline;
+
+        }
+
+        a:active {
+            /*設定正在點選的連結*/
+            text-decoration: underline;
+        }
+
+        .footer {
+            height: 1000px;
+            background-color: #656565;
+            position: relative;
+        }
+
         .us {
             font-weight: bold;
             text-align: center;
@@ -201,13 +229,24 @@
             color: #FFFFFF;
         }
 
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 999em;
+            margin-top: 20px;
+        }
+        .center {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
         .copyright {
             font-weight: normal;
             text-align: center;
             font-size: 12px;
             line-height: 30px;
             color: #FFFFFF;
-        }
     </style>
 
 <body>
@@ -299,15 +338,15 @@
             <p>#拔河</p>
             <p>#體育</p>
         </div>
-    </div>
-    <div class="footer desktop-only">
+
+   <div class="footer desktop-only">
             <div class="us" style="padding-top: 15px; font-weight: 700;">關於我們</div>
             <div class="copyright">一群法賢的愛徒</div>
 
             <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
                 <div>
                     <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
-                        <img src="./images/icons_header_footer/tingli.jpg" class="photo center">
+                        <img src="../../images/icons_header_footer/tingli.jpg" class="photo center">
                     </a>
                 </div>
                 <div class="us" style="margin: 0px 110px 0px 30px;">
@@ -317,7 +356,7 @@
 
                 <div>
                     <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
-                        <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+                        <img src="../../images/icons_header_footer/stacy.jpg" class="photo center"></a>
                 </div>
                 <div class="us" style="margin-left: 30px;">
                     <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
@@ -330,7 +369,7 @@
                         黃宥綺</a></div>
                 <div>
                     <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
-                        <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+                        <img src="../../images/icons_header_footer/you.jpg" class="photo center"></a>
                 </div>
 
                 <div class="us" style="margin: 0px 30px 0px 110px;">
@@ -338,7 +377,7 @@
                         黃易凡</a></div>
                 <div>
                     <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
-                        <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+                        <img src="../../images/icons_header_footer/eva.jpg" class="photo center"></a>
                 </div>
             </div>
             <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
@@ -424,13 +463,14 @@
         </div>
     </div>
     <!-- footer -->
-    <div class="footer">
+   <!-- footer -->
+        <div class="footer">
             <div class="us" style="padding-top: 15px;">關於我們</div>
             <div class="copyright">一群法賢的愛徒</div>
 
             <div>
                 <a href="https://yeeeva.github.io/NickNews/pages/about_me/tingli's_page.html" target="_blank">
-                    <img src="./images/icons_header_footer/tingli.jpg" class="photo center"></a>
+                    <img src="../../images/icons_header_footer/tingli.jpg" class="photo center"></a>
             </div>
 
             <div class="us">
@@ -439,7 +479,7 @@
 
             <div>
                 <a href="https://yeeeva.github.io/NickNews/pages/about_me/stacy's_page.html" target="_blank">
-                    <img src="./images/icons_header_footer/stacy.jpg" class="photo center"></a>
+                    <img src="../../images/icons_header_footer/stacy.jpg" class="photo center"></a>
             </div>
 
             <div class="us">
@@ -448,7 +488,7 @@
 
             <div>
                 <a href="https://yeeeva.github.io/NickNews/pages/about_me/you's_page.html" target="_blank">
-                    <img src="./images/icons_header_footer/you.jpg" class="photo center"></a>
+                    <img src="../../images/icons_header_footer/you.jpg" class="photo center"></a>
             </div>
 
             <div class="us">
@@ -457,7 +497,7 @@
 
             <div>
                 <a href="https://yeeeva.github.io/NickNews/pages/about_me/eva's_page.html" target="_blank">
-                    <img src="./images/icons_header_footer/eva.jpg" class="photo center"></a>
+                    <img src="../../images/icons_header_footer/eva.jpg" class="photo center"></a>
             </div>
 
             <div class="us">
@@ -465,7 +505,6 @@
                     黃易凡</a></div>
             <div class="copyright" style="position: relative; bottom: -60px;">Copyright © 2020 Nick News</div>
         </div>
-    </div>
 
 </body>
 </head>
