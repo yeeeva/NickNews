@@ -2,6 +2,7 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel=icon href=../../images/icons_header_footer/favicon.png type="image/png">
   <title>NICKNEWS</title>
@@ -25,7 +26,7 @@
       }
 
       .us {
-        font-weight: 400;
+        font-weight: bold;
         text-align: center;
         font-size: 16px;
         line-height: 35px;
@@ -65,7 +66,7 @@
       }
 
       body {
-        font-family: Verdana, sans-serif;
+        font-family: 'Noto Sans TC', sans-serif;
         margin: 0
       }
 
@@ -232,7 +233,7 @@
       #intro_content {
         color: rgba(255, 255, 255, 1);
         letter-spacing: 0;
-        font-family: Roboto;
+        font-family: 'Noto Sans TC', sans-serif;
         font-size: 18px;
         line-height: 38px;
         margin: auto;
@@ -240,7 +241,8 @@
 
       #intro_content_name {
         color: rgba(255, 255, 255, 1);
-        font-family: "Source Han Sans TWHK", serif;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: bold;
         font-size: 30px;
         text-decoration: none;
       }
@@ -426,8 +428,10 @@
           max-height: 150px;
         }
 
-        /*hide slide-show */
-        .slidebackground, .slideshow-container {
+        /* article,hide slide-show  */
+        .article_text, .article_text_title, .text_container,
+        .desktop-only, .slidebackground, .slideshow-container,
+        .icon_mail_white{
           display: none;
         }
 
@@ -475,23 +479,17 @@
           margin-left: auto;
         }
 
-        .icon_mail_white {
-          display: none;
-        }
-
         .icon_mail_grey {
           display: inline;
         }
 
-        /* article */
-        .article_text, .article_text_title, .text_container{
-          display: none;
-        }
         .article_text_title_mobile{
           display: inline-block;
         }
+        /*adjust padding on mobile ver*/
         .article_container{
-          padding-bottom: 3%
+          padding-bottom: 5%;
+          padding-top: 6%;
         }
         /*change 45 to 100*/
         .img_container {
@@ -500,9 +498,7 @@
           flex-direction: column;
           text-align: center
         }
-        .desktop-only {
-          /* don't display at mobile */
-          display: none;}
+
       }
 
   </style>
@@ -696,30 +692,30 @@
     <div class="copyright">一群法賢的愛徒</div>
 
     <div>
-      <a href="tingli’s_page.html" >
+      <a href="tingli's_page.html" >
         <img src="../../images/icons_header_footer/tingli.jpg" class="photo center"></a>
     </div>
 
     <div class="us">
-      <a href="./tingli’s_page.html" >
+      <a href="./tingli's_page.html" >
         劉庭莉</a></div>
 
     <div>
-      <a href="stacy’s_page.html" >
+      <a href="stacy's_page.html" >
         <img src="../../images/icons_header_footer/stacy.jpg" class="photo center"></a>
     </div>
 
     <div class="us">
-      <a href="stacy’s_page.html" >
+      <a href="stacy's_page.html" >
         白　欣</a></div>
 
     <div>
-      <a href="./you’s_page.html" >
+      <a href="./you's_page.html" >
         <img src="../../images/icons_header_footer/you.jpg" class="photo center"></a>
     </div>
 
     <div class="us">
-      <a href="./you’s_page.html" >
+      <a href="./you's_page.html" >
         黃宥綺</a></div>
 
     <div>
@@ -741,30 +737,30 @@
 
   <div style="display: flex; align-items: center;justify-content: center; margin: 30px 0px 30px 0px;">
     <div>
-      <a href="tingli’s_page.html" >
+      <a href="tingli's_page.html" >
         <img src="../../images/icons_header_footer/tingli.jpg" class="photo center">
       </a>
     </div>
     <div class="us" style="margin: 0px 110px 0px 30px;">
-      <a href="tingli’s_page.html" >
+      <a href="tingli's_page.html" >
         劉庭莉</a></div>
 
 
     <div>
-      <a href="stacy’s_page.html" >
+      <a href="stacy's_page.html" >
         <img src="../../images/icons_header_footer/stacy.jpg" class="photo center"></a>
     </div>
     <div class="us" style="margin-left: 30px;">
-      <a href="stacy’s_page.html">
+      <a href="stacy's_page.html">
         白　欣</a></div>
   </div>
 
   <div style="display: flex; align-items: center;justify-content: center;">
     <div class="us" style="margin-right: 30px;">
-      <a href="./you’s_page.html" >
+      <a href="./you's_page.html" >
         黃宥綺</a></div>
     <div>
-      <a href="./you’s_page.html" >
+      <a href="./you's_page.html" >
         <img src="../../images/icons_header_footer/you.jpg" class="photo center"></a>
     </div>
 
