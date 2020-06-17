@@ -74,7 +74,8 @@
     }
 
     .mySlides {
-      display: none
+      display: none;
+      height: 100%;
     }
 
     img {
@@ -84,7 +85,7 @@
     /*Slideshow background*/
     .slidebackground {
       background-color: #E2E2E2;
-      max-height: 715px;
+      height: 715px;
       padding: 92px;
     }
 
@@ -96,7 +97,7 @@
       margin-right: auto;
       margin-left: auto;
       overflow: hidden;
-
+      height: 100%;
     }
 
     /* Next & previous buttons */
@@ -198,9 +199,8 @@
 
     .slide-img {
       max-width: 100%;
-      max-height: 100%;
-      width: 100%;
-      height: auto;
+      min-height: 100%;
+      object-fit: cover;
     }
 
     .intro_container {
@@ -304,10 +304,10 @@
 
     .img {
       margin: auto;
-      background-size: cover;
+      object-fit: cover;
       max-width: 350px;
-      width:90%;
-      height:80%;
+      width: 90%;
+      height: 80%;
     }
 
     .text_container {
@@ -496,9 +496,11 @@
         padding-bottom: 7%;
         padding-top: 7%;
       }
+
       .article_container_background {
-        height:350px ;
+        height: 350px;
       }
+
       /*change 45 to 100*/
       .img_container {
         width: 100%;
