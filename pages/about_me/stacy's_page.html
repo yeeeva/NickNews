@@ -74,7 +74,8 @@
     }
 
     .mySlides {
-      display: none
+      display: none;
+      height: 100%;
     }
 
     img {
@@ -84,7 +85,7 @@
     /*Slideshow background*/
     .slidebackground {
       background-color: #E2E2E2;
-      max-height: 715px;
+      height: 715px;
       padding: 92px;
     }
 
@@ -96,7 +97,7 @@
       margin-right: auto;
       margin-left: auto;
       overflow: hidden;
-
+      height: 100%;
     }
 
     /* Next & previous buttons */
@@ -198,9 +199,10 @@
 
     .slide-img {
       max-width: 100%;
-      max-height: 100%;
-      width: 100%;
-      height: auto;
+      /*max-height: 100%;*/
+      /*width: 100%;*/
+      min-height: 100%;
+      object-fit: cover;
     }
 
     .intro_container {
@@ -306,8 +308,8 @@
       margin: auto;
       object-fit: cover;
       max-width: 350px;
-      width:90%;
-      height:80%;
+      width: 90%;
+      height: 80%;
     }
 
     .text_container {
@@ -496,9 +498,11 @@
         padding-bottom: 7%;
         padding-top: 7%;
       }
+
       .article_container_background {
-        height:350px ;
+        height: 350px;
       }
+
       /*change 45 to 100*/
       .img_container {
         width: 100%;
@@ -554,10 +558,9 @@
 <!-- SlideShow -->
 <div class="slidebackground">
   <div class="slideshow-container">
-
     <div class="mySlides fade">
-      <div class="number-text">1 / 4</div>
       <img src="../../images/article_cover_images/hk.jpg" class="slide-img" alt="sc">
+      <div class="number-text">1 / 4</div>
       <a href="../../pages/articles/hk.html">
         <div class="text">港警攻校情勢升溫　政大生自發靜坐挺香港</div>
       </a>
@@ -631,6 +634,23 @@
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
   }
+
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {
+      slideIndex = 1
+    }
+    x[slideIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+  }
+
 </script>
 
 <!-- 進入文章部分 -->
