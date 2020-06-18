@@ -557,7 +557,7 @@
 <div class="slidebackground">
   <div class="slideshow-container">
     <div class="mySlides fade">
-      <img src="../../images/article_cover_images/hk.jpg" class="slide-img" alt="sc">
+      <img src="../../images/article_cover_images/hk.jpg" class="slide-img" alt="hk">
       <div class="number-text">1 / 4</div>
       <a href="../../pages/articles/hk.html">
         <div class="text">港警攻校情勢升溫　政大生自發靜坐挺香港</div>
@@ -566,7 +566,7 @@
 
     <div class="mySlides fade">
       <div class="number-text">2 / 4</div>
-      <img src="../../images/article_cover_images/sh.jpg" class="slide-img" alt="chen">
+      <img src="../../images/article_cover_images/sh.jpg" class="slide-img" alt="sh">
       <a href="../../pages/articles/sh.html">
         <div class="text">世新學生會爆財務不透明　聲明引假法條惹議</div>
       </a>
@@ -574,7 +574,7 @@
 
     <div class="mySlides fade">
       <div class="number-text">3 / 4</div>
-      <img src="../../images/article_cover_images/sp.jpg" class="slide-img" alt="nuclear">
+      <img src="../../images/article_cover_images/sp.jpg" class="slide-img" alt="sp">
       <a href="../../pages/articles/sp.html">
         <div class="text">擊劍攻防戰　陳致傑飛身刺擊搶下冠軍</div>
       </a>
@@ -582,7 +582,7 @@
 
     <div class="mySlides fade">
       <div class="number-text">4 / 4</div>
-      <img src="../../images/article_cover_images/law.jpg" class="slide-img" alt="art">
+      <img src="../../images/article_cover_images/law.jpg" class="slide-img" alt="law">
       <a href="../../pages/articles/law.html">
         <div class="text">司法天秤無法衡量的傷痛　修復式司法另闢正義之路</div>
       </a>
@@ -631,22 +631,6 @@
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-  }
-
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {
-      slideIndex = 1
-    }
-    x[slideIndex - 1].style.display = "block";
-    setTimeout(carousel, 8000); // Change image every 8 seconds
   }
 
 </script>
